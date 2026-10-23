@@ -9,6 +9,7 @@ const NAV_ITEMS = [
   { label: 'Home', href: '/' },
   { label: 'Tusker Registry', href: '/catalog.html' },
   { label: 'Sanctuary Map', href: '/map.html' },
+  { label: 'Our Mission', href: '/mission.html' },
   { label: 'About & Conservation', href: '/about.html' },
   { label: 'Contact', href: '/contact.html' }
 ];
@@ -88,6 +89,7 @@ export function getFooterHtml() {
           <li><a href="/">Home</a></li>
           <li><a href="/catalog.html">Full Registry</a></li>
           <li><a href="/map.html">Sanctuary Map</a></li>
+          <li><a href="/mission.html">Our Mission</a></li>
           <li><a href="/about.html">Conservation Mission</a></li>
         </ul>
       </div>

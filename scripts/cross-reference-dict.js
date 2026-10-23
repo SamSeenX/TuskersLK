@@ -3,6 +3,7 @@
  * Defines key terms to automatically cross-link between elephant profiles and pages.
  */
 export const crossReferenceDict = [
+  { term: 'Kawanthissa', url: '/elephants/kawanthissa-tusker.html', label: 'Kawanthissa Tusker Memorial' },
   { term: 'Nadungamuwa Raja', url: '/elephants/nadungamuwa-raja.html', label: 'Nadungamuwa Raja Chronicle' },
   { term: 'Galgamuwa Dala Poottuwa', url: '/elephants/dala-poottuwa.html', label: 'Galgamuwa Dala Poottuwa Chronicle' },
   { term: 'Dala Poottuwa', url: '/elephants/dala-poottuwa.html', label: 'Dala Poottuwa' },

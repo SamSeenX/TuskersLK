@@ -3,6 +3,20 @@
  */
 export const WILD_ELEPHANTS = [
   {
+    id: 'kawanthissa-tusker',
+    name: 'Kawanthissa (The Siyambalangamuwa Giant)',
+    sinhalaName: 'කාවන්තිස්ස',
+    status: 'Deceased',
+    category: 'Wild Tusker',
+    lifespan: 'c. 1975 – October 2026 (Aged approx. 45–50)',
+    coordinates: [7.9833, 80.2500],
+    locationName: 'Usgala Siyambalangamuwa, Galgamuwa and Maho',
+    causeOfDeath: 'Gunshot wound to the right front leg in late September 2026 leading to acute physical deterioration, dehydration, and collapse on October 16, 2026. His passing inspired the creation of this very registry and sparked nationwide demands for wildlife legal reform.',
+    whyFamous: 'Standing nearly 11 feet tall, Kawanthissa was one of the largest and most beloved wild tuskers in modern Sri Lankan history. Known for his astonishingly peaceful demeanor around farming villages in Galgamuwa and Maho, his tragic demise in October 2026 united the nation in grief and ignited the movement to catalog and defend every surviving tusker.',
+    physicalTraits: 'Towering 11 ft shoulder height, thick majestic symmetrical ivory tusks, calm and dignified wild temperament',
+    habitat: 'Usgala Siyambalangamuwa tank catchment, Galgamuwa and Maho forests'
+  },
+  {
     id: 'dala-poottuwa',
     name: 'Galgamuwa Dala Poottuwa',
     sinhalaName: 'ගල්ගමුවේ දළ පූට්ටුවා',
