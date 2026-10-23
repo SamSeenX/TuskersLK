@@ -15,7 +15,7 @@ const NAV_ITEMS = [
 ];
 
 export function getSeoMetaHtml({
-  title = "Wanali: Sri Lanka's Notable Elephants & Famous Tuskers Archive",
+  title = "TuskersLk | ඇත් පියස: Sri Lanka's Notable Elephants Registry",
   description = "The definitive geospatial archive and comprehensive registry of Sri Lanka's notable elephants, famous wild tuskers, and historic legends.",
   path = '/',
   image = OG_IMAGE_URL,
@@ -58,9 +58,9 @@ export function getHeaderHtml(currentPath = '/') {
 
   return `<header class="site-header">
   <div class="header-container">
-    <a href="/" class="brand-logo" aria-label="Wanali Home">
+    <a href="/" class="brand-logo" aria-label="TuskersLk Home">
       <span class="logo-icon" aria-hidden="true">🐘</span>
-      <span class="logo-text">WANALI <span>/ ඇත් පියස</span></span>
+      <span class="logo-text">TuskersLk <span>/ ඇත් පියස</span></span>
     </a>
     <nav id="site-nav" class="site-nav" aria-label="Main Navigation">
       <ul class="nav-list">
@@ -84,7 +84,7 @@ export function getFooterHtml() {
   return `<footer class="site-footer">
   <div class="footer-container">
     <div class="footer-brand">
-      <div class="footer-logo">🐘 WANALI</div>
+      <div class="footer-logo">🐘 TUSKERSLK</div>
       <p class="footer-tagline">National historical registry and conservation memorial dedicated to the majestic elephants and tuskers of Sri Lanka.</p>
     </div>
     <nav class="footer-nav" aria-label="Footer Navigation">
@@ -119,7 +119,7 @@ export function getFooterHtml() {
     </nav>
   </div>
   <div class="footer-bottom">
-    <p>&copy; ${currentYear} Wanali Heritage and Wildlife Project. Dedicated to wild tusker protection and peaceful coexistence.</p>
+    <p>&copy; ${currentYear} TuskersLk Heritage and Wildlife Project. Dedicated to wild tusker protection and peaceful coexistence.</p>
   </div>
 </footer>`;
 }

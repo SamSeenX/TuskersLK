@@ -12,7 +12,7 @@ function generateElephantPage(elephant) {
   const currentPath = `/elephants/${elephant.id}.html`;
   const headerHtml = getHeaderHtml(currentPath);
   const footerHtml = getFooterHtml();
-  const pageTitle = `${elephant.name} (${elephant.sinhalaName}) | Wanali Tusker Archive`;
+  const pageTitle = `${elephant.name} (${elephant.sinhalaName}) | TuskersLk | ඇත් පියස`;
   const pageDesc = `${elephant.name} - ${elephant.category} of Sri Lanka. ${elephant.whyFamous.slice(0, 150)}...`;
 
   const seoMetaHtml = getSeoMetaHtml({
