@@ -18,6 +18,10 @@ body {
   padding: 0 1.5rem;
 }
 
+@media (max-width: 480px) {
+  .container { padding: 0 1rem; }
+}
+
 /* Footer */
 .site-footer {
   margin-top: auto;

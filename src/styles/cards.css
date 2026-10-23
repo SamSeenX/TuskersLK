@@ -1,9 +1,19 @@
 /* Dossier Card & Index Styles: Wanali Archival System */
 .tusker-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: 1.75rem;
   margin: 2rem 0;
+}
+
+@media (max-width: 640px) {
+  .tusker-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+  .archival-filter-panel { padding: 1rem; }
+  .filter-segments-row { gap: 0.6rem 1rem; }
+}
+
+@media (max-width: 420px) {
+  .dossier-grid { grid-template-columns: 1fr; }
 }
 
 .tusker-card {
