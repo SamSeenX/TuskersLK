@@ -4,8 +4,30 @@ import { renderElephantCard } from './modules/elephant-card.js';
 import { initCatalogFilter } from './modules/catalog-filter.js';
 import { initTuskerMap } from './modules/map-controller.js';
 
+function initMobileMenu() {
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const nav = document.getElementById('site-nav');
+  if (!menuBtn || !nav) return;
+
+  menuBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = nav.classList.toggle('is-open');
+    menuBtn.classList.toggle('is-active', isOpen);
+    menuBtn.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  document.addEventListener('click', (e) => {
+    if (nav.classList.contains('is-open') && !nav.contains(e.target) && !menuBtn.contains(e.target)) {
+      nav.classList.remove('is-open');
+      menuBtn.classList.remove('is-active');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   themeManager.init();
+  initMobileMenu();
 
   // Initialize Map if canvas is present
   const mapCanvas = document.getElementById('tusker-map-canvas');

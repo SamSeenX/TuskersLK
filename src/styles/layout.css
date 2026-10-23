@@ -1,4 +1,4 @@
-/* Layout Styles: Wanali Archive */
+/* Base Layout & Footer Styles: Wanali Archive */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
@@ -16,80 +16,6 @@ body {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 1.5rem;
-}
-
-/* Header */
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: var(--bg-glass);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border-subtle);
-  height: var(--header-height);
-  display: flex;
-  align-items: center;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-
-.brand-logo {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  text-decoration: none;
-  color: var(--text-primary);
-  font-family: var(--font-serif);
-  font-weight: 700;
-  font-size: 1.25rem;
-}
-
-.brand-logo span span {
-  font-size: 0.85rem;
-  font-family: var(--font-sans);
-  color: var(--accent-gold);
-  font-weight: 400;
-}
-
-.site-nav .nav-list { display: flex; list-style: none; gap: 1.5rem; }
-
-.nav-link {
-  text-decoration: none;
-  color: var(--text-secondary);
-  font-weight: 500;
-  font-size: 0.95rem;
-  padding: 0.4rem 0.2rem;
-  position: relative;
-}
-
-.nav-link:hover, .nav-link.active { color: var(--accent-gold); }
-
-.nav-link.active::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background-color: var(--accent-gold);
-}
-
-.theme-toggle {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  color: var(--text-primary);
-  padding: 0.4rem 0.7rem;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
 }
 
 /* Footer */
@@ -118,7 +44,6 @@ body {
 }
 
 .footer-tagline { color: var(--text-muted); font-size: 0.95rem; max-width: 380px; }
-
 .footer-nav { display: flex; gap: 2.5rem; justify-content: flex-end; }
 
 .footer-col h4 {
@@ -129,7 +54,6 @@ body {
 }
 
 .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
-
 .footer-col a { text-decoration: none; color: var(--text-secondary); font-size: 0.9rem; }
 .footer-col a:hover { color: var(--text-primary); }
 
@@ -144,9 +68,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .site-header { height: auto; padding: 0.8rem 0; }
-  .header-container { flex-wrap: wrap; gap: 0.8rem; }
-  .site-nav .nav-list { flex-wrap: wrap; gap: 0.8rem 1.2rem; }
   .footer-container { grid-template-columns: 1fr; gap: 1.8rem; }
   .footer-nav { justify-content: flex-start; flex-wrap: wrap; gap: 2rem; }
 }

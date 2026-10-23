@@ -62,13 +62,18 @@ export function getHeaderHtml(currentPath = '/') {
       <span class="logo-icon" aria-hidden="true">🐘</span>
       <span class="logo-text">WANALI <span>/ ඇත් පියස</span></span>
     </a>
-    <nav class="site-nav" aria-label="Main Navigation">
+    <nav id="site-nav" class="site-nav" aria-label="Main Navigation">
       <ul class="nav-list">
         ${navLinks}
       </ul>
     </nav>
     <div class="header-actions">
       <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle dark and light mode">🌓</button>
+      <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
     </div>
   </div>
 </header>`;
