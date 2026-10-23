@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanctuary Map | Wanali Sri Lankan Elephant Explorer</title>
+  <meta name="description" content="Interactive map plotting last known sightings, sanctuary territories, and memorial sites of Sri Lanka iconic wild tuskers.">
+    <!-- Search Engine & Discovery Directives -->
+
+  <!-- OpenGraph Rich Card Metadata -->
+
+  <!-- Twitter Compact Card (Side-by-Side Thumbnail) -->
+    <!-- Search Engine & Discovery Directives -->
+
+  <!-- OpenGraph Rich Card Metadata -->
+
+  <!-- Twitter Compact Card (Side-by-Side Thumbnail) -->
+    <!-- Search Engine & Discovery Directives -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+
+  <!-- OpenGraph Rich Card Metadata -->
+  <meta property="og:site_name" content="Wanali: Sri Lankan Tuskers & Elephants">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Sanctuary Map | Wanali Sri Lankan Elephant Explorer">
+  <meta property="og:description" content="Interactive map plotting last known sightings, sanctuary territories, and memorial sites of Sri Lanka iconic wild tuskers.">
+  <meta property="og:url" content="https://wanali.srilanka.wildlife/map.html">
+  <meta property="og:image" content="https://wanali.srilanka.wildlife/og-thumbnail.png">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="800">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Wanali: Sri Lankan Tuskers & Elephants Emblem">
+
+  <!-- Twitter Compact Card (Side-by-Side Thumbnail) -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sanctuary Map | Wanali Sri Lankan Elephant Explorer">
+  <meta name="twitter:description" content="Interactive map plotting last known sightings, sanctuary territories, and memorial sites of Sri Lanka iconic wild tuskers.">
+  <meta name="twitter:image" content="https://wanali.srilanka.wildlife/og-thumbnail.png">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <script>(function(){var s=localStorage.getItem('wanali_app_theme');if(s!=='light'){document.documentElement.setAttribute('data-theme','dark');}})();</script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="/src/styles/main.css">
+  <link rel="canonical" href="https://wanali.srilanka.wildlife/map.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemPage",
+    "name": "Wanali Elephant Sanctuary Map",
+    "url": "https://wanali.srilanka.wildlife/map.html",
+    "description": "Interactive map of Sri Lanka famous wild tuskers and their roaming territories."
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+  <div class="header-container">
+    <a href="/" class="brand-logo" aria-label="Wanali Home">
+      <span class="logo-icon" aria-hidden="true">🐘</span>
+      <span class="logo-text">WANALI <span>/ ඇත් පියස</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Main Navigation">
+      <ul class="nav-list">
+        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href="/catalog.html" class="nav-link">Tusker Registry</a></li>
+        <li><a href="/map.html" class="nav-link active" aria-current="page">Sanctuary Map</a></li>
+        <li><a href="/about.html" class="nav-link">About & Conservation</a></li>
+        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle dark and light mode">🌓</button>
+    </div>
+  </div>
+</header>
+
+  <main class="container" style="padding-top: 2.5rem; padding-bottom: 4rem;">
+    <div class="page-intro" style="margin-bottom: 1.5rem;">
+      <span class="badge badge-category" style="margin-bottom: 0.5rem;">Geospatial Archive</span>
+      <h1 style="font-family: var(--font-serif); font-size: 2.4rem; margin-bottom: 0.5rem;">Elephant Sanctuaries & Roaming Corridors</h1>
+      <p style="color: var(--text-secondary); max-width: 760px; font-size: 1.05rem;">
+        Explore the historic habitats, sacred temple precincts, and tragic memorial locations of Ceylon most iconic tuskers. Click any elephant marker to examine their chronicle.
+      </p>
+    </div>
+
+    <div class="map-container-wrapper" style="margin-bottom: 3rem;">
+      <div class="map-header-bar">
+        <div class="map-title">
+          <span>📍</span> Sri Lanka National Tusker Coordinates
+        </div>
+        <div class="map-legend">
+          <div class="legend-item"><span class="legend-dot alive"></span> Living Icon</div>
+          <div class="legend-item"><span class="legend-dot deceased"></span> Fallen Memorial</div>
+          <div class="legend-item"><span class="legend-dot historical"></span> Ancient Legend</div>
+        </div>
+        <div class="filter-group">
+          <button class="filter-pill active" data-map-filter="all">All</button>
+          <button class="filter-pill" data-map-filter="alive">Living</button>
+          <button class="filter-pill" data-map-filter="deceased">Fallen</button>
+          <button class="filter-pill" data-map-filter="historical">Historical</button>
+        </div>
+      </div>
+      <div id="tusker-map-canvas" style="height: 600px;"></div>
+    </div>
+
+    <!-- Habitat Corridors Information Section -->
+    <section>
+      <h2 style="font-family: var(--font-serif); margin-bottom: 1.5rem; font-size: 1.8rem;">Critical Tusker Habitats & Havens</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem;">
+        <div class="stat-card" style="text-align: left; padding: 1.5rem;">
+          <h3 style="font-size: 1.15rem; color: var(--accent-gold); margin-bottom: 0.5rem;">Kala Wewa Basin</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+            The ancient tank bed created by King Dhatusena is Sri Lanka premier wild tusker haven. Roamed by Revatha and Barana, it remains a critical seasonal feeding ground rich in aquatic vegetation.
+          </p>
+        </div>
+
+        <div class="stat-card" style="text-align: left; padding: 1.5rem;">
+          <h3 style="font-size: 1.15rem; color: var(--accent-gold); margin-bottom: 0.5rem;">Galgamuwa & Reswehera</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+            Dry-zone scrub jungle renowned for rare crossed-tusk genetics. Homeland of the fallen martyr <a href="/elephants/dala-poottuwa.html" class="cross-ref-link" title="Explore Galgamuwa Dala Poottuwa Chronicle">Galgamuwa Dala Poottuwa</a> and the young emerging <a href="/elephants/podi-dala-poottuwa.html" class="cross-ref-link" title="Explore Podi Dala Poottuwa">Podi Dala Poottuwa</a>.
+          </p>
+        </div>
+
+        <div class="stat-card" style="text-align: left; padding: 1.5rem;">
+          <h3 style="font-size: 1.15rem; color: var(--accent-gold); margin-bottom: 0.5rem;">Temple of the Sacred Tooth (Kandy)</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+            The spiritual home of Sri Lanka most revered ceremonial tuskers. Held the majestic processions of <a href="/elephants/nadungamuwa-raja.html" class="cross-ref-link" title="Explore Nadungamuwa Raja Chronicle">Nadungamuwa Raja</a>, <a href="/elephants/heiyantuduwa-raja.html" class="cross-ref-link" title="Explore Heiyantuduwa Raja">Heiyantuduwa Raja</a>, and currently Indiraja.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <div class="footer-logo">🐘 WANALI</div>
+      <p class="footer-tagline">National historical registry and conservation memorial dedicated to the majestic elephants and tuskers of Sri Lanka.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer Navigation">
+      <div class="footer-col">
+        <h4>Archive</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/catalog.html">Full Registry</a></li>
+          <li><a href="/map.html">Sanctuary Map</a></li>
+          <li><a href="/about.html">Conservation Mission</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Trust and Transparency</h4>
+        <ul>
+          <li><a href="/privacy.html">Privacy Policy</a></li>
+          <li><a href="/terms.html">Terms of Service</a></li>
+          <li><a href="/contact.html">Report Sightings and Updates</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Wanali Heritage and Wildlife Project. Dedicated to wild tusker protection and peaceful coexistence.</p>
+  </div>
+</footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

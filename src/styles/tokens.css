@@ -1,0 +1,70 @@
+/* Design Tokens: Wanali Tusker Archive */
+:root {
+  --font-serif: "Cinzel", "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+
+  /* Palette: Dark Forest and Sacred Earth (Default) */
+  --bg-primary: #0e1512;
+  --bg-secondary: #141f1a;
+  --bg-surface: #1a2a22;
+  --bg-card: #1f3329;
+  --bg-glass: rgba(20, 31, 26, 0.85);
+
+  --text-primary: #edeae1;
+  --text-secondary: #a2b3a6;
+  --text-muted: #6b7e70;
+
+  --border-subtle: rgba(212, 163, 115, 0.16);
+  --border-accent: rgba(224, 159, 62, 0.4);
+
+  --accent-gold: #e09f3e;
+  --accent-gold-hover: #c98a2f;
+  --accent-gold-light: rgba(224, 159, 62, 0.12);
+
+  --status-alive: #2ec4b6;
+  --status-alive-bg: rgba(46, 196, 182, 0.15);
+  --status-deceased: #e63946;
+  --status-deceased-bg: rgba(230, 57, 70, 0.15);
+  --status-historical: #e09f3e;
+  --status-historical-bg: rgba(224, 159, 62, 0.15);
+
+  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --shadow-elevation: 0 10px 30px rgba(0, 0, 0, 0.6);
+
+  --header-height: 70px;
+  --max-width: 1200px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --transition-smooth: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-theme="light"] {
+  --bg-primary: #f5f2eb;
+  --bg-secondary: #eae5d9;
+  --bg-surface: #ffffff;
+  --bg-card: #fdfbf7;
+  --bg-glass: rgba(245, 242, 235, 0.9);
+
+  --text-primary: #19241d;
+  --text-secondary: #4a5c50;
+  --text-muted: #7d9183;
+
+  --border-subtle: rgba(138, 90, 54, 0.2);
+  --border-accent: rgba(184, 115, 51, 0.5);
+
+  --accent-gold: #b36b22;
+  --accent-gold-hover: #965515;
+  --accent-gold-light: rgba(179, 107, 34, 0.12);
+
+  --status-alive: #1b8a5a;
+  --status-alive-bg: rgba(27, 138, 90, 0.12);
+  --status-deceased: #b52a35;
+  --status-deceased-bg: rgba(181, 42, 53, 0.12);
+  --status-historical: #b36b22;
+  --status-historical-bg: rgba(179, 107, 34, 0.12);
+
+  --shadow-subtle: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-elevation: 0 10px 25px rgba(0, 0, 0, 0.12);
+}

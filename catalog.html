@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tusker Registry | Wanali Sri Lankan Elephant Archive</title>
+  <meta name="description" content="Browse the full directory of Sri Lanka iconic wild tuskers, temple elephants, and historical legends with status, locations, causes of death, and chronicles.">
+    <!-- Search Engine & Discovery Directives -->
+
+  <!-- OpenGraph Rich Card Metadata -->
+
+  <!-- Twitter Compact Card (Side-by-Side Thumbnail) -->
+    <!-- Search Engine & Discovery Directives -->
+
+  <!-- OpenGraph Rich Card Metadata -->
+
+  <!-- Twitter Compact Card (Side-by-Side Thumbnail) -->
+    <!-- Search Engine & Discovery Directives -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+
+  <!-- OpenGraph Rich Card Metadata -->
+  <meta property="og:site_name" content="Wanali: Sri Lankan Tuskers & Elephants">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Tusker Registry | Wanali Sri Lankan Elephant Archive">
+  <meta property="og:description" content="Browse the full directory of Sri Lanka iconic wild tuskers, temple elephants, and historical legends with status, locations, causes of death, and chronicles.">
+  <meta property="og:url" content="https://wanali.srilanka.wildlife/catalog.html">
+  <meta property="og:image" content="https://wanali.srilanka.wildlife/og-thumbnail.png">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="800">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Wanali: Sri Lankan Tuskers & Elephants Emblem">
+
+  <!-- Twitter Compact Card (Side-by-Side Thumbnail) -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Tusker Registry | Wanali Sri Lankan Elephant Archive">
+  <meta name="twitter:description" content="Browse the full directory of Sri Lanka iconic wild tuskers, temple elephants, and historical legends with status, locations, causes of death, and chronicles.">
+  <meta name="twitter:image" content="https://wanali.srilanka.wildlife/og-thumbnail.png">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <script>(function(){var s=localStorage.getItem('wanali_app_theme');if(s!=='light'){document.documentElement.setAttribute('data-theme','dark');}})();</script>
+  <link rel="stylesheet" href="/src/styles/main.css">
+  <link rel="canonical" href="https://wanali.srilanka.wildlife/catalog.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Wanali Tusker Registry",
+    "url": "https://wanali.srilanka.wildlife/catalog.html",
+    "description": "Comprehensive searchable catalog of Sri Lanka iconic tuskers and elephants."
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+  <div class="header-container">
+    <a href="/" class="brand-logo" aria-label="Wanali Home">
+      <span class="logo-icon" aria-hidden="true">🐘</span>
+      <span class="logo-text">WANALI <span>/ ඇත් පියස</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Main Navigation">
+      <ul class="nav-list">
+        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href="/catalog.html" class="nav-link active" aria-current="page">Tusker Registry</a></li>
+        <li><a href="/map.html" class="nav-link">Sanctuary Map</a></li>
+        <li><a href="/about.html" class="nav-link">About & Conservation</a></li>
+        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle dark and light mode">🌓</button>
+    </div>
+  </div>
+</header>
+
+  <main class="container" style="padding-top: 2.5rem; padding-bottom: 4rem;">
+    <section class="page-intro" style="margin-bottom: 2rem;">
+      <span class="badge badge-category" style="margin-bottom: 0.5rem;">Archival Database</span>
+      <h1 style="font-family: var(--font-serif); font-size: 2.4rem; margin-bottom: 0.5rem;">National Tusker Registry</h1>
+      <p style="color: var(--text-secondary); max-width: 720px; font-size: 1.05rem;">
+        Complete records of recognized Sri Lankan tuskers across sanctuaries, temple estates, and historical chronicles. Filter by survival status, classification, or search by name.
+      </p>
+    </section>
+
+    <!-- Interactive Filter Toolbar -->
+    <section class="filter-bar" aria-label="Catalog Filtering Controls">
+      <div class="search-input-wrap">
+        <input 
+          type="search" 
+          id="search-input" 
+          class="search-input" 
+          placeholder="Search by name, Sinhala title, location or keywords..." 
+          aria-label="Search elephants"
+        >
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.6rem; width: 100%;">
+        <div style="display: flex; gap: 0.8rem; align-items: center; flex-wrap: wrap;">
+          <span style="font-size: 0.82rem; text-transform: uppercase; color: var(--accent-gold); font-weight: 600;">Status:</span>
+          <div class="filter-group">
+            <button class="filter-pill active" data-filter-status="all">All</button>
+            <button class="filter-pill" data-filter-status="Alive">Alive</button>
+            <button class="filter-pill" data-filter-status="Deceased">Deceased</button>
+            <button class="filter-pill" data-filter-status="Historical">Historical</button>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 0.8rem; align-items: center; flex-wrap: wrap;">
+          <span style="font-size: 0.82rem; text-transform: uppercase; color: var(--accent-gold); font-weight: 600;">Category:</span>
+          <div class="filter-group">
+            <button class="filter-pill active" data-filter-category="all">All</button>
+            <button class="filter-pill" data-filter-category="Wild Tusker">Wild Tusker</button>
+            <button class="filter-pill" data-filter-category="Temple Custodian">Temple Custodian</button>
+            <button class="filter-pill" data-filter-category="Historical Legend">Historical Legend</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div style="display: flex; justify-content: space-between; align-items: center; margin: 1rem 0;">
+      <span id="filter-results-count" style="font-size: 0.9rem; color: var(--text-muted);">Showing 12 of 12 records</span>
+    </div>
+
+    <!-- Dynamic Tusker Grid -->
+    <div id="tusker-grid-container" class="tusker-grid"></div>
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <div class="footer-logo">🐘 WANALI</div>
+      <p class="footer-tagline">National historical registry and conservation memorial dedicated to the majestic elephants and tuskers of Sri Lanka.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer Navigation">
+      <div class="footer-col">
+        <h4>Archive</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/catalog.html">Full Registry</a></li>
+          <li><a href="/map.html">Sanctuary Map</a></li>
+          <li><a href="/about.html">Conservation Mission</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Trust and Transparency</h4>
+        <ul>
+          <li><a href="/privacy.html">Privacy Policy</a></li>
+          <li><a href="/terms.html">Terms of Service</a></li>
+          <li><a href="/contact.html">Report Sightings and Updates</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Wanali Heritage and Wildlife Project. Dedicated to wild tusker protection and peaceful coexistence.</p>
+  </div>
+</footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

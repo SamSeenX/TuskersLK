@@ -1,0 +1,89 @@
+/**
+ * Temple Custodians & Historical Legends of Sri Lanka
+ */
+export const CUSTODIAN_ELEPHANTS = [
+  {
+    id: 'nadungamuwa-raja',
+    name: 'Nadungamuwa Raja',
+    sinhalaName: 'නැදුන්ගමුවේ රාජා',
+    status: 'Deceased',
+    category: 'Temple Custodian',
+    lifespan: '1953 – 2022 (Aged 69)',
+    coordinates: [7.2906, 80.6337],
+    locationName: 'Nadungamuwa, Gampaha and Kandy',
+    causeOfDeath: 'Natural causes due to old age in March 2022. Declared a National Cultural Treasure by Presidential decree.',
+    whyFamous: 'The revered 10.5-foot tall gentle giant who carried the sacred Casket of the Tooth Relic at the Kandy Esala Perahera for 15 years. He walked over 90 km along national highways from Gampaha to Kandy flanked by military escort and thousands of devotees.',
+    physicalTraits: 'Over 10.5 ft shoulder height, two parallel floor-grazing tusks, calm and dignified demeanor',
+    habitat: 'Nadungamuwa Estate, Gampaha and Sri Dalada Maligawa'
+  },
+  {
+    id: 'millangoda-raja',
+    name: 'Millangoda Raja',
+    sinhalaName: 'මිල්ලංගොඩ රාජා',
+    status: 'Deceased',
+    category: 'Temple Custodian',
+    lifespan: '1938 – 2011 (Aged 73)',
+    coordinates: [7.2513, 80.3464],
+    locationName: 'Molagoda, Kegalle and Kandy',
+    causeOfDeath: 'Natural old age in July 2011. Honored with state-level funeral rites and traditional honors.',
+    whyFamous: 'Renowned for possessing the longest tusks of any Asian elephant in modern history, measuring over 7.5 feet in length that brushed the ground. Carried the sacred tooth relic casket for nearly two decades.',
+    physicalTraits: '7.5 ft sweeping tusks that crossed in front, massive forehead dome, gentle giant of Sabaragamuwa',
+    habitat: 'Molagoda Estate, Kegalle and Sri Dalada Maligawa'
+  },
+  {
+    id: 'heiyantuduwa-raja',
+    name: 'Heiyantuduwa Raja',
+    sinhalaName: 'හෙයියන්තුඩුවේ රාජා',
+    status: 'Deceased',
+    category: 'Temple Custodian',
+    lifespan: '1924 – 2002 (Aged 78)',
+    coordinates: [6.9536, 79.9814],
+    locationName: 'Heiyantuduwa, Kelaniya and Kandy',
+    causeOfDeath: 'Natural old age in November 2002. His skeleton was preserved and gifted to the National Museum of Colombo.',
+    whyFamous: 'Carried the Sacred Relic Casket of the Buddha at the Dalada Maligawa for 11 years following the passing of Maligawa Raja. Also carried the relics at the Kelaniya Duruthu Perahera and Bellanwila Perahera.',
+    physicalTraits: 'Broad forehead, upward-sweeping ivory tusks of equal length, regal posture during Buddhist processions',
+    habitat: 'Heiyantuduwa walauwa, Kelaniya Raja Maha Vihara and Kandy'
+  },
+  {
+    id: 'kandula-legend',
+    name: 'Kandula the War Tusker',
+    sinhalaName: 'කන්දුල ඇතු',
+    status: 'Historical',
+    category: 'Historical Legend',
+    lifespan: '2nd Century BCE (Reign of King Dutugemunu)',
+    coordinates: [8.3114, 80.4037],
+    locationName: 'Anuradhapura Royal Citadel and Magama Kingdom',
+    causeOfDeath: 'Honored natural passing after legendary service in uniting ancient Sri Lanka.',
+    whyFamous: 'The most famous war elephant in ancient Sri Lankan history, documented extensively in the Mahavamsa. Served as the loyal mount of King Dutugemunu, battering through the fortified iron gates of Vijithapura fortress.',
+    physicalTraits: 'Peerless battle intelligence, immense physical strength, honored with royal ornaments and golden tusk sheaths',
+    habitat: 'Ancient Rajarata and Ruhuna royal stables'
+  },
+  {
+    id: 'kataragama-wasana',
+    name: 'Kataragama Wasana',
+    sinhalaName: 'වාසනා (කතරගම රාජා)',
+    status: 'Alive',
+    category: 'Temple Custodian',
+    lifespan: 'c. 1971 – Present (Aged approx. 53)',
+    coordinates: [6.4167, 81.3333],
+    locationName: 'Ruhunu Maha Kataragama Devalaya, Monaragala',
+    causeOfDeath: 'None. Living and serving as chief ceremonial tusker.',
+    whyFamous: 'The premier ceremonial tusker of the Ruhunu Maha Kataragama Devalaya, carrying the sacred casket of God Skanda through the historic sacred grounds for decades.',
+    physicalTraits: 'Graceful outward-turning tusks, regal demeanor during night torch-lit processions along the Menik Ganga',
+    habitat: 'Kataragama sacred precinct and Yala buffer forests'
+  },
+  {
+    id: 'maligawa-indiraja',
+    name: 'Indiraja of Dalada Maligawa',
+    sinhalaName: 'ඉන්දිරාජා',
+    status: 'Alive',
+    category: 'Temple Custodian',
+    lifespan: 'c. 1980 – Present (Aged approx. 44)',
+    coordinates: [7.2936, 80.6413],
+    locationName: 'Sri Dalada Maligawa, Kandy',
+    causeOfDeath: 'None. Living and serving at the Temple of the Tooth.',
+    whyFamous: 'Gifted in 1987 to the Sri Dalada Maligawa by former Indian Prime Minister Rajiv Gandhi. Indiraja is one of the senior ceremonial tuskers trusted to carry the Sacred Relic Casket at the annual Kandy Esala Perahera.',
+    physicalTraits: 'Tall stature, elegant symmetric tusks, high crown, steady and composed walking gait',
+    habitat: 'Sri Dalada Maligawa elephant stables, Kandy'
+  }
+];

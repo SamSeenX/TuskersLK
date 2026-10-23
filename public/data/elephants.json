@@ -1,0 +1,206 @@
+[
+  {
+    "id": "nadungamuwa-raja",
+    "name": "Nadungamuwa Raja",
+    "sinhalaName": "නැදුන්ගමුවේ රාජා",
+    "status": "Deceased",
+    "category": "Temple Custodian",
+    "lifespan": "1953 – 2022 (Aged 69)",
+    "coordinates": [
+      7.2906,
+      80.6337
+    ],
+    "locationName": "Nadungamuwa, Gampaha and Kandy",
+    "causeOfDeath": "Natural causes due to old age in March 2022. Declared a National Cultural Treasure by Presidential decree.",
+    "whyFamous": "The revered 10.5-foot tall gentle giant who carried the sacred Casket of the Tooth Relic at the Kandy Esala Perahera for 15 years. He walked over 90 km along national highways from Gampaha to Kandy flanked by military escort and thousands of devotees.",
+    "physicalTraits": "Over 10.5 ft shoulder height, two parallel floor-grazing tusks, calm and dignified demeanor",
+    "habitat": "Nadungamuwa Estate, Gampaha and Sri Dalada Maligawa"
+  },
+  {
+    "id": "dala-poottuwa",
+    "name": "Galgamuwa Dala Poottuwa",
+    "sinhalaName": "ගල්ගමුවේ දළ පූට්ටුවා",
+    "status": "Deceased",
+    "category": "Wild Tusker",
+    "lifespan": "c. 1967 – 2017 (Aged approx. 50)",
+    "coordinates": [
+      8.0125,
+      80.2825
+    ],
+    "locationName": "Galgamuwa and Sorabora Reserve, North Western Province",
+    "causeOfDeath": "Poached by ivory traffickers with high-powered rifle fire in November 2017. His tragic demise ignited nationwide outrage and strict anti-poaching wildlife legislation.",
+    "whyFamous": "Sri Lanka most recognizable wild tusker with unique crossed tusks forming an X shape. Despite suffering from blindness in one eye due to past trap gun injuries, he roamed the Galgamuwa dry zone peacefully for decades.",
+    "physicalTraits": "Distinctive criss-crossed tusks, imposing stature, known for peaceful coexistence with rural farmers",
+    "habitat": "Galgamuwa, Reswehera, and Siyambalangamuwa forests"
+  },
+  {
+    "id": "millangoda-raja",
+    "name": "Millangoda Raja",
+    "sinhalaName": "මිල්ලංගොඩ රාජා",
+    "status": "Deceased",
+    "category": "Temple Custodian",
+    "lifespan": "1938 – 2011 (Aged 73)",
+    "coordinates": [
+      7.2513,
+      80.3464
+    ],
+    "locationName": "Molagoda, Kegalle and Kandy",
+    "causeOfDeath": "Natural old age in July 2011. Honored with state-level funeral rites and traditional honors.",
+    "whyFamous": "Renowned for possessing the longest tusks of any Asian elephant in modern history, measuring over 7.5 feet in length that brushed the ground. Carried the sacred tooth relic casket for nearly two decades.",
+    "physicalTraits": "7.5 ft sweeping tusks that crossed in front, massive forehead dome, gentle giant of Sabaragamuwa",
+    "habitat": "Molagoda Estate, Kegalle and Sri Dalada Maligawa"
+  },
+  {
+    "id": "panamure-hasthiraja",
+    "name": "Panamure Hasthi Rajaya",
+    "sinhalaName": "පනාමුරේ ඇත් රජා",
+    "status": "Historical",
+    "category": "Wild Tusker",
+    "lifespan": "Unknown – August 1950",
+    "coordinates": [
+      6.3833,
+      80.7833
+    ],
+    "locationName": "Panamure Forest, Sabaragamuwa Province",
+    "causeOfDeath": "Shot by kraal organizers in August 1950 after fiercely defending his herd and refusing capture during Sri Lanka last elephant kraal.",
+    "whyFamous": "The immortal symbol of freedom in Sri Lankan folklore. His heroic stand to protect his herd and refusal to yield to chains forced parliament to outlaw the elephant kraal capture system forever.",
+    "physicalTraits": "Fierce herd protector, defiant wild bull immortalized in traditional folk songs and popular culture",
+    "habitat": "Panamure virgin forests, Sabaragamuwa"
+  },
+  {
+    "id": "thirappane-agbo",
+    "name": "Thirappane Agbo",
+    "sinhalaName": "තිරප්පනේ අග්බෝ",
+    "status": "Alive",
+    "category": "Wild Tusker",
+    "lifespan": "c. 1980 – Present (Aged approx. 44)",
+    "coordinates": [
+      8.225,
+      80.5167
+    ],
+    "locationName": "Thirappane and Maradankadawala, North Central Province",
+    "causeOfDeath": "None. Surviving under continuous veterinary care after recovering from severe gunshot wounds inflicted in 2023.",
+    "whyFamous": "Beloved icon of the Rajarata wilderness. Survived debilitating trap gun and rifle wounds to his front leg thanks to an unprecedented multi-month medical mobilization by wildlife veterinarians and loving villagers.",
+    "physicalTraits": "Long curving ivory tusks, resilient spirit, recognized by wildlife trackers across Anuradhapura tanks",
+    "habitat": "Thirappane and Maradankadawala forest corridors"
+  },
+  {
+    "id": "kala-wewa-revatha",
+    "name": "Kala Wewa Revatha",
+    "sinhalaName": "කලාවැවේ රේවත",
+    "status": "Deceased",
+    "category": "Wild Tusker",
+    "lifespan": "c. 1970 – 2021 (Aged approx. 50)",
+    "coordinates": [
+      8.0167,
+      80.5333
+    ],
+    "locationName": "Kala Wewa and Balalu Wewa Sanctuary",
+    "causeOfDeath": "Electrocuted in March 2021 by an illegal electric fence erected around private farmland bordering the sanctuary.",
+    "whyFamous": "The beloved gentle giant of the Kala Wewa tank ecosystem. Thousands of nature photographers and local families visited Kala Wewa each dry season specifically to view Revatha feeding peacefully among lotus beds.",
+    "physicalTraits": "Dark black pigmentation, thick downward-sloping symmetrical tusks, uniquely calm disposition around humans",
+    "habitat": "Kala Wewa National Park and Balalu Wewa wetland reserve"
+  },
+  {
+    "id": "heiyantuduwa-raja",
+    "name": "Heiyantuduwa Raja",
+    "sinhalaName": "හෙයියන්තුඩුවේ රාජා",
+    "status": "Deceased",
+    "category": "Temple Custodian",
+    "lifespan": "1924 – 2002 (Aged 78)",
+    "coordinates": [
+      6.9536,
+      79.9814
+    ],
+    "locationName": "Heiyantuduwa, Kelaniya and Kandy",
+    "causeOfDeath": "Natural old age in November 2002. His skeleton was preserved and gifted to the National Museum of Colombo.",
+    "whyFamous": "Carried the Sacred Relic Casket of the Buddha at the Dalada Maligawa for 11 years following the passing of Maligawa Raja. Also carried the relics at the Kelaniya Duruthu Perahera and Bellanwila Perahera.",
+    "physicalTraits": "Broad forehead, upward-sweeping ivory tusks of equal length, regal posture during Buddhist processions",
+    "habitat": "Heiyantuduwa walauwa, Kelaniya Raja Maha Vihara and Kandy"
+  },
+  {
+    "id": "kandula-legend",
+    "name": "Kandula the War Tusker",
+    "sinhalaName": "කන්දුල ඇතු",
+    "status": "Historical",
+    "category": "Historical Legend",
+    "lifespan": "2nd Century BCE (Reign of King Dutugemunu)",
+    "coordinates": [
+      8.3114,
+      80.4037
+    ],
+    "locationName": "Anuradhapura Royal Citadel and Magama Kingdom",
+    "causeOfDeath": "Honored natural passing after legendary service in uniting ancient Sri Lanka.",
+    "whyFamous": "The most famous war elephant in ancient Sri Lankan history, documented extensively in the Mahavamsa. Served as the loyal mount of King Dutugemunu, battering through the fortified iron gates of Vijithapura fortress.",
+    "physicalTraits": "Peerless battle intelligence, immense physical strength, honored with royal ornaments and golden tusk sheaths",
+    "habitat": "Ancient Rajarata and Ruhuna royal stables"
+  },
+  {
+    "id": "kataragama-wasana",
+    "name": "Kataragama Wasana",
+    "sinhalaName": "වාසනා (කතරගම රාජා)",
+    "status": "Alive",
+    "category": "Temple Custodian",
+    "lifespan": "c. 1971 – Present (Aged approx. 53)",
+    "coordinates": [
+      6.4167,
+      81.3333
+    ],
+    "locationName": "Ruhunu Maha Kataragama Devalaya, Monaragala",
+    "causeOfDeath": "None. Living and serving as chief ceremonial tusker.",
+    "whyFamous": "The premier ceremonial tusker of the Ruhunu Maha Kataragama Devalaya, carrying the sacred casket of God Skanda through the historic sacred grounds for decades.",
+    "physicalTraits": "Graceful outward-turning tusks, regal demeanor during night torch-lit processions along the Menik Ganga",
+    "habitat": "Kataragama sacred precinct and Yala buffer forests"
+  },
+  {
+    "id": "maligawa-indiraja",
+    "name": "Indiraja of Dalada Maligawa",
+    "sinhalaName": "ඉන්දිරාජා",
+    "status": "Alive",
+    "category": "Temple Custodian",
+    "lifespan": "c. 1980 – Present (Aged approx. 44)",
+    "coordinates": [
+      7.2936,
+      80.6413
+    ],
+    "locationName": "Sri Dalada Maligawa, Kandy",
+    "causeOfDeath": "None. Living and serving at the Temple of the Tooth.",
+    "whyFamous": "Gifted in 1987 to the Sri Dalada Maligawa by former Indian Prime Minister Rajiv Gandhi. Indiraja is one of the senior ceremonial tuskers trusted to carry the Sacred Relic Casket at the annual Kandy Esala Perahera.",
+    "physicalTraits": "Tall stature, elegant symmetric tusks, high crown, steady and composed walking gait",
+    "habitat": "Sri Dalada Maligawa elephant stables, Kandy"
+  },
+  {
+    "id": "kala-wewa-barana",
+    "name": "Barana of Kala Wewa",
+    "sinhalaName": "බරණ",
+    "status": "Deceased",
+    "category": "Wild Tusker",
+    "lifespan": "c. 1975 – 2022 (Aged approx. 47)",
+    "coordinates": [
+      8.045,
+      80.502
+    ],
+    "locationName": "Kala Wewa, Galkiriyagama, North Central Province",
+    "causeOfDeath": "Succumbed to severe gunshot injuries sustained during human-elephant conflict skirmishes in 2022.",
+    "whyFamous": "A dominant wild patriarch tusker of the Kala Wewa basin. Renowned among rangers and wildlife enthusiasts for his bold presence and companionship with tusker Revatha.",
+    "physicalTraits": "Heavy thickset tusks, prominent shoulder crest, ruler of the tank shores during dry season gatherings",
+    "habitat": "Kala Wewa wetlands and Kahalla-Pallekele sanctuary"
+  },
+  {
+    "id": "podi-dala-poottuwa",
+    "name": "Podi Dala Poottuwa",
+    "sinhalaName": "ගල්ගමුවේ පොඩි දළ පූට්ටුවා",
+    "status": "Alive",
+    "category": "Wild Tusker",
+    "lifespan": "c. 2005 – Present (Aged approx. 19)",
+    "coordinates": [
+      8.03,
+      80.25
+    ],
+    "locationName": "Reswehera Forest Reserve, North Western Province",
+    "causeOfDeath": "None. Roaming wild under protective surveillance by the Department of Wildlife Conservation.",
+    "whyFamous": "Carries the rare crossed-tusk genetics of the fallen legend Galgamuwa Dala Poottuwa. Symbolizes hope and natural renewal for wild tuskers in the northwestern dry zone.",
+    "physicalTraits": "Young emergent crossed tusks, alert wild temperament, protected by local community guardians",
+    "habitat": "Reswehera and Galgamuwa wild reserve"
+  }
+]

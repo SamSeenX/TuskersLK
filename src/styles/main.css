@@ -1,0 +1,44 @@
+@import './tokens.css';
+@import './layout.css';
+@import './components.css';
+@import './cards.css';
+@import './map.css';
+
+main {
+  flex: 1;
+}
+
+/* Prose & Editorial Typography */
+.prose {
+  max-width: 780px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.prose h1, .prose h2, .prose h3 {
+  font-family: var(--font-serif);
+  color: var(--text-primary);
+  margin: 2rem 0 1rem;
+}
+
+.prose p {
+  margin-bottom: 1.25rem;
+}
+
+.prose ul, .prose ol {
+  margin: 1rem 0 1.5rem 1.5rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+}
+
+.prose blockquote {
+  border-left: 3px solid var(--accent-gold);
+  padding: 0.8rem 1.2rem;
+  background: var(--bg-surface);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-style: italic;
+  margin: 1.5rem 0;
+}

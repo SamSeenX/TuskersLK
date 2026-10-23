@@ -1,0 +1,151 @@
+/* Map Styles: Wanali Geospatial Explorer */
+
+.map-section {
+  margin: 2.5rem 0;
+}
+
+.map-container-wrapper {
+  position: relative;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-elevation);
+}
+
+.map-header-bar {
+  padding: 1rem 1.5rem;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.map-title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.map-legend {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.82rem;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-secondary);
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.legend-dot.alive { background-color: var(--status-alive); }
+.legend-dot.deceased { background-color: var(--status-deceased); }
+.legend-dot.historical { background-color: var(--status-historical); }
+
+#tusker-map-canvas {
+  height: 520px;
+  width: 100%;
+  background: #0b110e;
+  z-index: 1;
+}
+
+/* Custom Marker Pins */
+.custom-tusker-pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--bg-surface);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform var(--transition-smooth);
+}
+
+.custom-tusker-pin:hover {
+  transform: scale(1.25);
+  z-index: 999;
+}
+
+.custom-tusker-pin.alive {
+  border-color: var(--status-alive);
+  box-shadow: 0 0 10px rgba(46, 196, 182, 0.6);
+}
+
+.custom-tusker-pin.deceased {
+  border-color: var(--status-deceased);
+  box-shadow: 0 0 10px rgba(230, 57, 70, 0.6);
+}
+
+.custom-tusker-pin.historical {
+  border-color: var(--status-historical);
+  box-shadow: 0 0 10px rgba(224, 159, 62, 0.6);
+}
+
+/* Leaflet Popup Customization */
+.leaflet-popup-content-wrapper {
+  background: var(--bg-surface) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-accent) !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: var(--shadow-elevation) !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.leaflet-popup-tip {
+  background: var(--bg-surface) !important;
+  border: 1px solid var(--border-accent) !important;
+}
+
+.map-popup-card {
+  padding: 1rem 1.2rem;
+  max-width: 280px;
+}
+
+.map-popup-title {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.2rem;
+}
+
+.map-popup-sinhala {
+  font-size: 0.85rem;
+  color: var(--accent-gold);
+  margin-bottom: 0.5rem;
+}
+
+.map-popup-meta {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+}
+
+.map-popup-link {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-gold);
+  text-decoration: none;
+}

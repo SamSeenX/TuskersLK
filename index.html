@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanali: Sri Lankan Tuskers & Elephants Registry</title>
+  <meta name="description" content="Explore the historical registry and interactive geospatial map of Sri Lanka famous wild tuskers, temple custodians, and ancient legends.">
+    <!-- Search Engine & Discovery Directives -->
+
+  <!-- OpenGraph Rich Card Metadata -->
+
+  <!-- Twitter Compact Card (Side-by-Side Thumbnail) -->
+    <!-- Search Engine & Discovery Directives -->
+
+  <!-- OpenGraph Rich Card Metadata -->
+
+  <!-- Twitter Compact Card (Side-by-Side Thumbnail) -->
+    <!-- Search Engine & Discovery Directives -->
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+
+  <!-- OpenGraph Rich Card Metadata -->
+  <meta property="og:site_name" content="Wanali: Sri Lankan Tuskers & Elephants">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Wanali: Sri Lankan Tuskers & Elephants Registry">
+  <meta property="og:description" content="Explore the historical registry and interactive geospatial map of Sri Lanka famous wild tuskers, temple custodians, and ancient legends.">
+  <meta property="og:url" content="https://wanali.srilanka.wildlife/">
+  <meta property="og:image" content="https://wanali.srilanka.wildlife/og-thumbnail.png">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="800">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Wanali: Sri Lankan Tuskers & Elephants Emblem">
+
+  <!-- Twitter Compact Card (Side-by-Side Thumbnail) -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Wanali: Sri Lankan Tuskers & Elephants Registry">
+  <meta name="twitter:description" content="Explore the historical registry and interactive geospatial map of Sri Lanka famous wild tuskers, temple custodians, and ancient legends.">
+  <meta name="twitter:image" content="https://wanali.srilanka.wildlife/og-thumbnail.png">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <script>(function(){var s=localStorage.getItem('wanali_app_theme');if(s!=='light'){document.documentElement.setAttribute('data-theme','dark');}})();</script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="/src/styles/main.css">
+  <link rel="canonical" href="https://wanali.srilanka.wildlife/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Wanali: Sri Lankan Tuskers Registry",
+    "url": "https://wanali.srilanka.wildlife",
+    "description": "Comprehensive registry and interactive map of Sri Lanka iconic wild and temple tuskers."
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+  <div class="header-container">
+    <a href="/" class="brand-logo" aria-label="Wanali Home">
+      <span class="logo-icon" aria-hidden="true">🐘</span>
+      <span class="logo-text">WANALI <span>/ ඇත් පියස</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Main Navigation">
+      <ul class="nav-list">
+        <li><a href="/" class="nav-link active" aria-current="page">Home</a></li>
+        <li><a href="/catalog.html" class="nav-link">Tusker Registry</a></li>
+        <li><a href="/map.html" class="nav-link">Sanctuary Map</a></li>
+        <li><a href="/about.html" class="nav-link">About & Conservation</a></li>
+        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle dark and light mode">🌓</button>
+    </div>
+  </div>
+</header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-subtitle">CEYLON ELEPHANT CONSERVATION ARCHIVE</div>
+        <h1 class="hero-title">The Fabled Tuskers & Giants of Sri Lanka</h1>
+        <p class="hero-desc">
+          Less than five percent of male elephants in Sri Lanka carry majestic ivory tusks. 
+          Wanali catalogs their life chronicles, roaming territories, cause of death, and irreplaceable place in our cultural soul.
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="/catalog.html" class="btn btn-primary">Open Tusker Registry &rarr;</a>
+          <a href="/map.html" class="btn btn-secondary">Explore Sanctuary Map</a>
+        </div>
+
+        <div class="stats-ribbon">
+          <div class="stat-card">
+            <span class="stat-number">12</span>
+            <span class="stat-label">Documented Icons</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" style="color: var(--status-alive);">4</span>
+            <span class="stat-label">Living Wild & Sacred</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" style="color: var(--status-deceased);">6</span>
+            <span class="stat-label">Fallen Memorials</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">2</span>
+            <span class="stat-label">Historic Legends</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container map-section">
+      <div class="map-container-wrapper">
+        <div class="map-header-bar">
+          <h2 class="map-title">
+            <span>🗺️</span> Sri Lanka Sanctuary & Roaming Coordinates
+          </h2>
+          <div class="map-legend">
+            <div class="legend-item">
+              <span class="legend-dot alive"></span> Living
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot deceased"></span> Fallen / Deceased
+            </div>
+            <div class="legend-item">
+              <span class="legend-dot historical"></span> Ancient Legend
+            </div>
+          </div>
+          <div class="filter-group">
+            <button class="filter-pill active" data-map-filter="all">All</button>
+            <button class="filter-pill" data-map-filter="alive">Alive</button>
+            <button class="filter-pill" data-map-filter="deceased">Fallen</button>
+          </div>
+        </div>
+        <div id="tusker-map-canvas"></div>
+      </div>
+    </section>
+
+    <section class="container" style="padding: 2.5rem 1.5rem 4rem;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <h2 style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 0.3rem;">Featured Tuskers</h2>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">Renowned patriarchs, sacred relic bearers, and defiant champions of the wild.</p>
+        </div>
+        <a href="/catalog.html" class="btn btn-secondary">View Complete Database &rarr;</a>
+      </div>
+
+      <div id="featured-tuskers-container" class="tusker-grid"></div>
+    </section>
+
+    <section style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); padding: 4rem 0;">
+      <div class="container prose">
+        <h2 style="text-align: center; margin-top: 0;">A Biological Heritage at Risk</h2>
+        <p>
+          Unlike African elephants where both males and females carry ivory, only a small fraction of Asian elephant bulls in Sri Lanka possess tusks. 
+          Centuries of colonial trophy hunting eliminated a vast portion of tusk-bearing genes. Today, every surviving wild tusker like <a href="/elephants/thirappane-agbo.html" class="cross-ref-link" title="Explore Thirappane Agbo Chronicle">Thirappane Agbo</a> and <a href="/elephants/podi-dala-poottuwa.html" class="cross-ref-link" title="Explore Podi Dala Poottuwa">Podi Dala Poottuwa</a> carries irreplaceable evolutionary heritage.
+        </p>
+        <p>
+          Human-elephant conflict, illegal high-voltage farm wires, and deadly jaw-bombs (Hakka Patas) pose an existential threat. Wanali serves as both a historical registry and a call for proactive wildlife corridors and peaceful coexistence.
+        </p>
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="/about.html" class="btn btn-primary">Learn More About Conservation Efforts &rarr;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <div class="footer-logo">🐘 WANALI</div>
+      <p class="footer-tagline">National historical registry and conservation memorial dedicated to the majestic elephants and tuskers of Sri Lanka.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer Navigation">
+      <div class="footer-col">
+        <h4>Archive</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/catalog.html">Full Registry</a></li>
+          <li><a href="/map.html">Sanctuary Map</a></li>
+          <li><a href="/about.html">Conservation Mission</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Trust and Transparency</h4>
+        <ul>
+          <li><a href="/privacy.html">Privacy Policy</a></li>
+          <li><a href="/terms.html">Terms of Service</a></li>
+          <li><a href="/contact.html">Report Sightings and Updates</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Wanali Heritage and Wildlife Project. Dedicated to wild tusker protection and peaceful coexistence.</p>
+  </div>
+</footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
