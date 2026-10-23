@@ -19,6 +19,7 @@ function generateElephantPage(elephant) {
     title: pageTitle,
     description: pageDesc,
     path: currentPath,
+    image: elephant.image,
     type: 'article'
   });
 
@@ -26,6 +27,7 @@ function generateElephantPage(elephant) {
     '@context': 'https://schema.org',
     '@type': 'Article',
     'headline': `${elephant.name} - Sri Lankan Elephant Chronicle`,
+    'image': elephant.image,
     'description': elephant.whyFamous,
     'about': {
       '@type': 'Thing',
@@ -38,6 +40,16 @@ function generateElephantPage(elephant) {
 
   const statusBadgeClass = elephant.status === 'Alive' ? 'badge-alive' :
     (elephant.status === 'Deceased' ? 'badge-deceased' : 'badge-historical');
+
+  const figureHtml = elephant.image ? `
+      <figure class="tusker-figure">
+        <img src="${elephant.image}" alt="${elephant.name}" class="tusker-figure-img" loading="lazy">
+        <figcaption class="tusker-figcaption">
+          <span>${elephant.imageCaption}</span>
+          <span class="tusker-license-badge">Credit: ${elephant.imageCredit} (${elephant.imageLicense})</span>
+        </figcaption>
+      </figure>
+  ` : '';
 
   return `<!DOCTYPE html>
 <html lang="en" data-theme="dark">
@@ -63,9 +75,11 @@ ${schemaJson}
         <span style="font-size: 0.85rem; color: var(--text-muted);">${elephant.lifespan}</span>
       </div>
       <h1 style="font-size: 2.4rem; line-height: 1.15; margin: 0 0 0.3rem;">${elephant.name}</h1>
-      <div style="font-size: 1.25rem; color: var(--accent-gold); font-family: var(--font-serif); margin-bottom: 2rem;">
+      <div style="font-size: 1.25rem; color: var(--accent-gold); font-family: var(--font-serif); margin-bottom: 1.5rem;">
         ${elephant.sinhalaName}
       </div>
+
+      ${figureHtml}
 
       <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.5rem; margin-bottom: 2rem;">
         <h2 style="font-size: 1.1rem; margin-top: 0; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 0.05em;">

@@ -14,8 +14,16 @@ export function renderElephantCard(elephant) {
     </li>
   ` : '';
 
+  const imageHtml = elephant.image ? `
+    <div class="card-image-wrap">
+      <img src="${elephant.image}" alt="${elephant.name}" class="card-image" loading="lazy">
+      <span class="card-image-credit">${elephant.imageCredit}</span>
+    </div>
+  ` : '';
+
   return `
     <article class="tusker-card" data-id="${elephant.id}" data-status="${elephant.status}" data-category="${elephant.category}">
+      ${imageHtml}
       <div class="card-header-meta">
         <span class="badge ${statusClass}">${elephant.status}</span>
         <span class="badge badge-category">${elephant.category}</span>

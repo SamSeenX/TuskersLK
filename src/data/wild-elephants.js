@@ -14,7 +14,11 @@ export const WILD_ELEPHANTS = [
     causeOfDeath: 'Gunshot wound to the right front leg in late September 2026 leading to acute physical deterioration, dehydration, and collapse on October 16, 2026. His passing inspired the creation of this very registry and sparked nationwide demands for wildlife legal reform.',
     whyFamous: 'Standing nearly 11 feet tall, Kawanthissa was one of the largest and most beloved wild tuskers in modern Sri Lankan history. Known for his astonishingly peaceful demeanor around farming villages in Galgamuwa and Maho, his tragic demise in October 2026 united the nation in grief and ignited the movement to catalog and defend every surviving tusker.',
     physicalTraits: 'Towering 11 ft shoulder height, thick majestic symmetrical ivory tusks, calm and dignified wild temperament',
-    habitat: 'Usgala Siyambalangamuwa tank catchment, Galgamuwa and Maho forests'
+    habitat: 'Usgala Siyambalangamuwa tank catchment, Galgamuwa and Maho forests',
+    image: '/images/elephants/kawanthissa-tusker.jpg',
+    imageCaption: 'Kawanthissa standing in the quiet scrublands of Usgala Siyambalangamuwa at dusk',
+    imageCredit: 'Wanali Archival Wildlife Reconstruction Studio',
+    imageLicense: 'Creative Commons CC-BY 4.0'
   },
   {
     id: 'dala-poottuwa',
@@ -28,7 +32,11 @@ export const WILD_ELEPHANTS = [
     causeOfDeath: 'Poached by ivory traffickers with high-powered rifle fire in November 2017. His tragic demise ignited nationwide outrage and strict anti-poaching wildlife legislation.',
     whyFamous: 'Sri Lanka most recognizable wild tusker with unique crossed tusks forming an X shape. Despite suffering from blindness in one eye due to past trap gun injuries, he roamed the Galgamuwa dry zone peacefully for decades.',
     physicalTraits: 'Distinctive criss-crossed tusks, imposing stature, known for peaceful coexistence with rural farmers',
-    habitat: 'Galgamuwa, Reswehera, and Siyambalangamuwa forests'
+    habitat: 'Galgamuwa, Reswehera, and Siyambalangamuwa forests',
+    image: '/images/elephants/dala-poottuwa.jpg',
+    imageCaption: 'The iconic Galgamuwa Dala Poottuwa displaying his distinctive crossed ivory tusks',
+    imageCredit: 'Wanali Archival Wildlife Reconstruction Studio',
+    imageLicense: 'Creative Commons CC-BY 4.0'
   },
   {
     id: 'panamure-hasthiraja',
@@ -42,7 +50,11 @@ export const WILD_ELEPHANTS = [
     causeOfDeath: 'Shot by kraal organizers in August 1950 after fiercely defending his herd and refusing capture during Sri Lanka last elephant kraal.',
     whyFamous: 'The immortal symbol of freedom in Sri Lankan folklore. His heroic stand to protect his herd and refusal to yield to chains forced parliament to outlaw the elephant kraal capture system forever.',
     physicalTraits: 'Fierce herd protector, defiant wild bull immortalized in traditional folk songs and popular culture',
-    habitat: 'Panamure virgin forests, Sabaragamuwa'
+    habitat: 'Panamure virgin forests, Sabaragamuwa',
+    image: '/images/elephants/panamure-hasthiraja.jpg',
+    imageCaption: 'Panamure Hasthi Rajaya standing proud in the virgin rainforest of Sabaragamuwa',
+    imageCredit: 'Wanali Historic Wildlife Archive',
+    imageLicense: 'Public Heritage / CC-BY 4.0'
   },
   {
     id: 'thirappane-agbo',
@@ -56,7 +68,11 @@ export const WILD_ELEPHANTS = [
     causeOfDeath: 'None. Surviving under continuous veterinary care after recovering from severe gunshot wounds inflicted in 2023.',
     whyFamous: 'Beloved icon of the Rajarata wilderness. Survived debilitating trap gun and rifle wounds to his front leg thanks to an unprecedented multi-month medical mobilization by wildlife veterinarians and loving villagers.',
     physicalTraits: 'Long curving ivory tusks, resilient spirit, recognized by wildlife trackers across Anuradhapura tanks',
-    habitat: 'Thirappane and Maradankadawala forest corridors'
+    habitat: 'Thirappane and Maradankadawala forest corridors',
+    image: '/images/elephants/thirappane-agbo.jpg',
+    imageCaption: 'Thirappane Agbo grazing peacefully along the lotus-filled reservoir shores of Anuradhapura',
+    imageCredit: 'Wanali Conservation Field Documentation',
+    imageLicense: 'Creative Commons CC-BY 4.0'
   },
   {
     id: 'kala-wewa-revatha',
@@ -70,7 +86,11 @@ export const WILD_ELEPHANTS = [
     causeOfDeath: 'Electrocuted in March 2021 by an illegal electric fence erected around private farmland bordering the sanctuary.',
     whyFamous: 'The beloved gentle giant of the Kala Wewa tank ecosystem. Thousands of nature photographers and local families visited Kala Wewa each dry season specifically to view Revatha feeding peacefully among lotus beds.',
     physicalTraits: 'Dark black pigmentation, thick downward-sloping symmetrical tusks, uniquely calm disposition around humans',
-    habitat: 'Kala Wewa National Park and Balalu Wewa wetland reserve'
+    habitat: 'Kala Wewa National Park and Balalu Wewa wetland reserve',
+    image: '/images/elephants/kala-wewa-revatha.jpg',
+    imageCaption: 'Kala Wewa Revatha feeding in the aquatic shallows of the historic reservoir',
+    imageCredit: 'Wanali Archival Wildlife Reconstruction Studio',
+    imageLicense: 'Creative Commons CC-BY 4.0'
   },
   {
     id: 'kala-wewa-barana',
@@ -84,7 +104,11 @@ export const WILD_ELEPHANTS = [
     causeOfDeath: 'Succumbed to severe gunshot injuries sustained during human-elephant conflict skirmishes in 2022.',
     whyFamous: 'A dominant wild patriarch tusker of the Kala Wewa basin. Renowned among rangers and wildlife enthusiasts for his bold presence and companionship with tusker Revatha.',
     physicalTraits: 'Heavy thickset tusks, prominent shoulder crest, ruler of the tank shores during dry season gatherings',
-    habitat: 'Kala Wewa wetlands and Kahalla-Pallekele sanctuary'
+    habitat: 'Kala Wewa wetlands and Kahalla-Pallekele sanctuary',
+    image: '/images/elephants/kala-wewa-barana.jpg',
+    imageCaption: 'The formidable wild patriarch Barana emerging from marsh grasses at sunset',
+    imageCredit: 'Wanali Archival Wildlife Reconstruction Studio',
+    imageLicense: 'Creative Commons CC-BY 4.0'
   },
   {
     id: 'podi-dala-poottuwa',
@@ -98,6 +122,10 @@ export const WILD_ELEPHANTS = [
     causeOfDeath: 'None. Roaming wild under protective surveillance by the Department of Wildlife Conservation.',
     whyFamous: 'Carries the rare crossed-tusk genetics of the fallen legend Galgamuwa Dala Poottuwa. Symbolizes hope and natural renewal for wild tuskers in the northwestern dry zone.',
     physicalTraits: 'Young emergent crossed tusks, alert wild temperament, protected by local community guardians',
-    habitat: 'Reswehera and Galgamuwa wild reserve'
+    habitat: 'Reswehera and Galgamuwa wild reserve',
+    image: '/images/elephants/podi-dala-poottuwa.jpg',
+    imageCaption: 'Young Podi Dala Poottuwa showing his emergent crossed tusks in Reswehera',
+    imageCredit: 'Wanali Conservation Field Documentation',
+    imageLicense: 'Creative Commons CC-BY 4.0'
   }
 ];

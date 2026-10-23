@@ -1,5 +1,4 @@
 /* Card and Filter Styles: Wanali Archive */
-
 .tusker-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -20,6 +19,39 @@
 .tusker-card:hover {
   transform: translateY(-3px);
   border-color: var(--border-accent);
+}
+
+.card-image-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin-bottom: 0.9rem;
+  background: var(--bg-surface);
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.tusker-card:hover .card-image { transform: scale(1.04); }
+
+.card-image-credit {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.72rem;
+  background: rgba(14, 21, 18, 0.88);
+  color: var(--text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .card-header-meta {
@@ -98,10 +130,7 @@
   justify-content: space-between;
 }
 
-.search-input-wrap {
-  flex: 1;
-  min-width: 250px;
-}
+.search-input-wrap { flex: 1; min-width: 250px; }
 
 .search-input {
   width: 100%;
@@ -115,15 +144,9 @@
   transition: border-color var(--transition-smooth);
 }
 
-.search-input:focus {
-  border-color: var(--accent-gold);
-}
+.search-input:focus { border-color: var(--accent-gold); }
 
-.filter-group {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
+.filter-group { display: flex; gap: 0.5rem; flex-wrap: wrap; }
 
 .filter-pill {
   padding: 0.4rem 0.85rem;
