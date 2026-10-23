@@ -7,6 +7,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { SITE_URL, SITE_NAME, OG_IMAGE_URL } from './site-config.js';
+import { ELEPHANTS } from '../src/data/elephants.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -95,6 +96,46 @@ function processHtmlFile(relPath) {
   fs.writeFileSync(fullPath, content, 'utf8');
 }
 
+function injectCatalogSchema() {
+  const catalogPath = path.join(ROOT_DIR, 'catalog.html');
+  if (!fs.existsSync(catalogPath)) return;
+  let content = fs.readFileSync(catalogPath, 'utf8');
+
+  const itemListElements = ELEPHANTS.map((elephant, index) => ({
+    '@type': 'ListItem',
+    'position': index + 1,
+    'name': elephant.name,
+    'alternateName': elephant.sinhalaName,
+    'url': `${SITE_URL}/elephants/${elephant.id}.html`
+  }));
+
+  const catalogSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'CollectionPage',
+        '@id': `${SITE_URL}/catalog.html#webpage`,
+        'name': "Sri Lanka's Notable Elephants & Tuskers Registry",
+        'url': `${SITE_URL}/catalog.html`,
+        'description': "The definitive searchable catalog of Sri Lanka's notable elephants and famous wild tuskers with lifespans, roaming territories, causes of death, and chronicles.",
+        'mainEntity': {
+          '@type': 'ItemList',
+          'name': "Sri Lanka's Notable Elephants and Tuskers",
+          'description': "Comprehensive registry of Sri Lanka's 24 notable elephants and historic tuskers.",
+          'numberOfItems': ELEPHANTS.length,
+          'itemListElement': itemListElements
+        }
+      }
+    ]
+  };
+
+  const schemaJson = JSON.stringify(catalogSchema, null, 2);
+  const schemaTag = `<script type="application/ld+json">\n${schemaJson}\n  </script>`;
+
+  content = content.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/i, schemaTag);
+  fs.writeFileSync(catalogPath, content, 'utf8');
+}
+
 export function syncSeoMeta() {
   const files = getHtmlFiles();
   let count = 0;
@@ -102,7 +143,8 @@ export function syncSeoMeta() {
     processHtmlFile(f);
     count++;
   });
-  console.log(`[SEO Sync] Injected complete OpenGraph & compact Twitter cards across ${count} HTML pages.`);
+  injectCatalogSchema();
+  console.log(`[SEO Sync] Injected complete OpenGraph, Twitter cards & ItemList Schema across ${count} pages.`);
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {

@@ -46,6 +46,11 @@
 
   <!-- Twitter Compact Card (Side-by-Side Thumbnail) -->
     <!-- Search Engine & Discovery Directives -->
+
+  <!-- OpenGraph Rich Card Metadata -->
+
+  <!-- Twitter Compact Card (Side-by-Side Thumbnail) -->
+    <!-- Search Engine & Discovery Directives -->
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
@@ -73,13 +78,194 @@
   <link rel="stylesheet" href="/src/styles/main.css">
   <link rel="canonical" href="https://wanali.srilanka.wildlife/catalog.html">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "Wanali Tusker Registry",
-    "url": "https://wanali.srilanka.wildlife/catalog.html",
-    "description": "Comprehensive searchable catalog of Sri Lanka iconic tuskers and elephants."
-  }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://wanali.srilanka.wildlife/catalog.html#webpage",
+      "name": "Sri Lanka's Notable Elephants & Tuskers Registry",
+      "url": "https://wanali.srilanka.wildlife/catalog.html",
+      "description": "The definitive searchable catalog of Sri Lanka's notable elephants and famous wild tuskers with lifespans, roaming territories, causes of death, and chronicles.",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Sri Lanka's Notable Elephants and Tuskers",
+        "description": "Comprehensive registry of Sri Lanka's 24 notable elephants and historic tuskers.",
+        "numberOfItems": 24,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Kawanthissa (The Siyambalangamuwa Giant)",
+            "alternateName": "කාවන්තිස්ස",
+            "url": "https://wanali.srilanka.wildlife/elephants/kawanthissa-tusker.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Galgamuwa Dala Poottuwa",
+            "alternateName": "ගල්ගමුවේ දළ පූට්ටුවා",
+            "url": "https://wanali.srilanka.wildlife/elephants/dala-poottuwa.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Walagamba of Kala Wewa",
+            "alternateName": "වලගම්බා",
+            "url": "https://wanali.srilanka.wildlife/elephants/walagamba-tusker.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Panamure Hasthi Rajaya",
+            "alternateName": "පනාමුරේ ඇත් රජා",
+            "url": "https://wanali.srilanka.wildlife/elephants/panamure-hasthiraja.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Thirappane Agbo",
+            "alternateName": "තිරප්පනේ අග්බෝ",
+            "url": "https://wanali.srilanka.wildlife/elephants/thirappane-agbo.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Kala Wewa Revatha",
+            "alternateName": "කලාවැවේ රේවත",
+            "url": "https://wanali.srilanka.wildlife/elephants/kala-wewa-revatha.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Barana of Kala Wewa",
+            "alternateName": "බරණ",
+            "url": "https://wanali.srilanka.wildlife/elephants/kala-wewa-barana.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "Podi Dala Poottuwa",
+            "alternateName": "ගල්ගමුවේ පොඩි දළ පූට්ටුවා",
+            "url": "https://wanali.srilanka.wildlife/elephants/podi-dala-poottuwa.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "name": "Sumedha of Wasgamuwa",
+            "alternateName": "සුමේධ",
+            "url": "https://wanali.srilanka.wildlife/elephants/wasgamuwa-sumedha.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "name": "Nandamitra of Yala",
+            "alternateName": "නන්දමිත්‍ර",
+            "url": "https://wanali.srilanka.wildlife/elephants/yala-nandamitra.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "name": "Kalthota Tusker (Mountain Escarpment Giant)",
+            "alternateName": "කල්තොට ඇතා",
+            "url": "https://wanali.srilanka.wildlife/elephants/kalthota-tusker.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 12,
+            "name": "Somawathiya Sando",
+            "alternateName": "සෝමාවතියේ සැන්ඩෝ",
+            "url": "https://wanali.srilanka.wildlife/elephants/somawathiya-sando.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 13,
+            "name": "Somawathiya Mahasen",
+            "alternateName": "සෝමාවතියේ මහසෙන්",
+            "url": "https://wanali.srilanka.wildlife/elephants/somawathiya-mahasen.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 14,
+            "name": "Gemunu of Yala",
+            "alternateName": "යාලේ ගැමුණු",
+            "url": "https://wanali.srilanka.wildlife/elephants/yala-gemunu.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 15,
+            "name": "Unicorn of Minneriya (Ekadanta)",
+            "alternateName": "මින්නේරියේ යුනිකෝන්",
+            "url": "https://wanali.srilanka.wildlife/elephants/minneriya-unicorn.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 16,
+            "name": "Maligawa Raja (The Paramount Casket Bearer)",
+            "alternateName": "මාලිගාවේ රාජා",
+            "url": "https://wanali.srilanka.wildlife/elephants/maligawa-raja.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 17,
+            "name": "Nadungamuwa Raja",
+            "alternateName": "නැදුන්ගමුවේ රාජා",
+            "url": "https://wanali.srilanka.wildlife/elephants/nadungamuwa-raja.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 18,
+            "name": "Millangoda Raja",
+            "alternateName": "මිල්ලංගොඩ රාජා",
+            "url": "https://wanali.srilanka.wildlife/elephants/millangoda-raja.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 19,
+            "name": "Heiyantuduwa Raja",
+            "alternateName": "හෙයියන්තුඩුවේ රාජා",
+            "url": "https://wanali.srilanka.wildlife/elephants/heiyantuduwa-raja.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 20,
+            "name": "Kelani Raja",
+            "alternateName": "කැලණි රාජා",
+            "url": "https://wanali.srilanka.wildlife/elephants/kelani-raja.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 21,
+            "name": "Muthu Raja (Sak Surin)",
+            "alternateName": "මුතු රාජා",
+            "url": "https://wanali.srilanka.wildlife/elephants/muthu-raja.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 22,
+            "name": "Kandula the War Tusker",
+            "alternateName": "කන්දුල ඇතු",
+            "url": "https://wanali.srilanka.wildlife/elephants/kandula-legend.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 23,
+            "name": "Kataragama Wasana",
+            "alternateName": "වාසනා (කතරගම රාජා)",
+            "url": "https://wanali.srilanka.wildlife/elephants/kataragama-wasana.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 24,
+            "name": "Indiraja of Dalada Maligawa",
+            "alternateName": "ඉන්දිරාජා",
+            "url": "https://wanali.srilanka.wildlife/elephants/maligawa-indiraja.html"
+          }
+        ]
+      }
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -108,9 +294,9 @@
   <main class="container" style="padding-top: 2.5rem; padding-bottom: 4rem;">
     <section class="page-intro" style="margin-bottom: 2rem;">
       <span class="badge badge-category" style="margin-bottom: 0.5rem;">Archival Database</span>
-      <h1 style="font-family: var(--font-serif); font-size: 2.4rem; margin-bottom: 0.5rem;">National Tusker Registry</h1>
+      <h1 style="font-family: var(--font-serif); font-size: 2.4rem; margin-bottom: 0.5rem;">Sri Lanka's Notable Elephants &amp; Tuskers Registry</h1>
       <p style="color: var(--text-secondary); max-width: 720px; font-size: 1.05rem;">
-        Complete records of recognized Sri Lankan tuskers across sanctuaries, temple estates, and historical chronicles. Filter by survival status, classification, or search by name.
+        The definitive catalog of Sri Lanka's notable elephants and iconic wild tuskers across tanks, sanctuaries, and temple archives. Filter by living status, classification, or search by name and territory.
       </p>
     </section>
 
@@ -151,6 +337,27 @@
 
     <!-- Dynamic Tusker Grid -->
     <div id="tusker-grid-container" class="tusker-grid"></div>
+
+    <section class="prose" style="margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid var(--border-subtle);">
+      <h2>Understanding Sri Lanka's Notable Elephants</h2>
+      <p>
+        Sri Lanka's wild and captive elephant populations hold deep historical, cultural, and ecological significance. Unlike African elephants where both sexes carry tusks, only approximately two to five percent of male Asian elephants in Sri Lanka carry prominent ivory tusks.
+      </p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+        <div class="field-record-card" style="margin: 0;">
+          <h3 style="font-size: 1.05rem; margin-top: 0; color: var(--accent-gold);">Who are the most famous tuskers?</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0;">
+            Historic legends include <a href="/elephants/maligawa-raja.html" class="cross-ref-link" title="Explore Maligawa Raja National Treasure">Maligawa Raja</a>, who carried the Sacred Tooth Relic for 37 years, and the towering <a href="/elephants/nadungamuwa-raja.html" class="cross-ref-link" title="Explore Nadungamuwa Raja Chronicle">Nadungamuwa Raja</a>. Wild icons include <a href="/elephants/dala-poottuwa.html" class="cross-ref-link" title="Explore Galgamuwa Dala Poottuwa Chronicle">Galgamuwa Dala Poottuwa</a>, Walagamba, <a href="/elephants/kawanthissa-tusker.html" class="cross-ref-link" title="Explore Kawanthissa Tusker Memorial">Kawanthissa</a>, and the surviving giant <a href="/elephants/thirappane-agbo.html" class="cross-ref-link" title="Explore Thirappane Agbo Chronicle">Thirappane Agbo</a>.
+          </p>
+        </div>
+        <div class="field-record-card" style="margin: 0;">
+          <h3 style="font-size: 1.05rem; margin-top: 0; color: var(--accent-gold);">Why are Sri Lankan tuskers rare?</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); margin: 0;">
+            Extensive 19th-century colonial hunting selectively targeted tusk-bearing males, depleting the tusk-carrying gene pool. Today, surviving wild tuskers face severe threats from human-elephant conflict and illegal farming barriers.
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
