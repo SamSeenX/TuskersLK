@@ -8,10 +8,9 @@ export function renderElephantCard(elephant) {
     (elephant.status === 'Deceased' ? 'badge-deceased' : 'badge-historical');
 
   const causeOfDeathHtml = elephant.causeOfDeath && elephant.causeOfDeath !== 'None' ? `
-    <li class="tusker-info-item">
-      <strong>Fate / Cause:</strong>
-      <span>${elephant.causeOfDeath}</span>
-    </li>
+    <div class="dossier-fate">
+      <strong>Fate / Cause:</strong> ${elephant.causeOfDeath}
+    </div>
   ` : '';
 
   const imageHtml = elephant.image ? `
@@ -30,27 +29,27 @@ export function renderElephantCard(elephant) {
       </div>
       <h3 class="tusker-name">${elephant.name}</h3>
       <div class="tusker-sinhala">${elephant.sinhalaName}</div>
-      <ul class="tusker-info-list">
-        <li class="tusker-info-item">
-          <strong>Lifespan:</strong>
-          <span>${elephant.lifespan}</span>
-        </li>
-        <li class="tusker-info-item">
-          <strong>Location:</strong>
-          <span>${elephant.locationName}</span>
-        </li>
-        <li class="tusker-info-item">
-          <strong>Tusks & Traits:</strong>
-          <span>${elephant.physicalTraits}</span>
-        </li>
+      <div class="dossier-grid">
+        <div class="dossier-field">
+          <span class="dossier-label">Lifespan</span>
+          <span class="dossier-value">${elephant.lifespan}</span>
+        </div>
+        <div class="dossier-field">
+          <span class="dossier-label">Location</span>
+          <span class="dossier-value">${elephant.locationName}</span>
+        </div>
+        <div class="dossier-field" style="grid-column: 1 / -1;">
+          <span class="dossier-label">Tusks &amp; Physical Traits</span>
+          <span class="dossier-value">${elephant.physicalTraits}</span>
+        </div>
         ${causeOfDeathHtml}
-      </ul>
-      <div class="tusker-famous-quote">
-        ${elephant.whyFamous}
       </div>
+      <p class="tusker-narrative">
+        ${elephant.whyFamous}
+      </p>
       <div class="card-footer">
-        <a href="/elephants/${elephant.id}.html" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.4rem 0.85rem;">
-          Full Chronicle &rarr;
+        <a href="/elephants/${elephant.id}.html" class="card-action">
+          View Archival Dossier
         </a>
       </div>
     </article>

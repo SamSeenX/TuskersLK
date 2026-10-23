@@ -69,32 +69,46 @@ ${schemaJson}
   ${headerHtml}
   <main class="container" style="padding-top: 2.5rem; padding-bottom: 4rem;">
     <article class="prose">
-      <div style="display: flex; gap: 0.6rem; align-items: center; margin-bottom: 1rem; flex-wrap: wrap;">
-        <span class="badge ${statusBadgeClass}">${elephant.status}</span>
-        <span class="badge badge-category">${elephant.category}</span>
-        <span style="font-size: 0.85rem; color: var(--text-muted);">${elephant.lifespan}</span>
-      </div>
-      <h1 style="font-size: 2.4rem; line-height: 1.15; margin: 0 0 0.3rem;">${elephant.name}</h1>
-      <div style="font-size: 1.25rem; color: var(--accent-gold); font-family: var(--font-serif); margin-bottom: 1.5rem;">
-        ${elephant.sinhalaName}
+      <div class="archival-profile-header">
+        <div class="archival-meta-line">
+          <span class="badge ${statusBadgeClass}">${elephant.status}</span>
+          <span class="badge badge-category">${elephant.category}</span>
+          <span class="archival-lifespan">${elephant.lifespan}</span>
+        </div>
+        <h1 class="tusker-profile-title">${elephant.name}</h1>
+        <div class="tusker-profile-sinhala">${elephant.sinhalaName}</div>
       </div>
 
       ${figureHtml}
 
-      <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.5rem; margin-bottom: 2rem;">
-        <h2 style="font-size: 1.1rem; margin-top: 0; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 0.05em;">
-          Registry Record
-        </h2>
-        <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.95rem;">
-          <li><strong>Roaming Territory:</strong> ${elephant.locationName}</li>
-          <li><strong>Habitat & Sanctuary:</strong> ${elephant.habitat}</li>
-          <li><strong>Physical Anatomy:</strong> ${elephant.physicalTraits}</li>
-          <li><strong>Geographic Coordinates:</strong> [${elephant.coordinates[0]}, ${elephant.coordinates[1]}]</li>
-          ${elephant.causeOfDeath ? `<li><strong>Fate & Cause of Death:</strong> ${elephant.causeOfDeath}</li>` : ''}
-        </ul>
+      <div class="field-record-card">
+        <h2 class="field-record-heading">Archival Field Dossier</h2>
+        <div class="field-record-grid">
+          <div class="field-record-item">
+            <span class="record-label">Roaming Territory</span>
+            <span class="record-value">${elephant.locationName}</span>
+          </div>
+          <div class="field-record-item">
+            <span class="record-label">Habitat Sanctuary</span>
+            <span class="record-value">${elephant.habitat}</span>
+          </div>
+          <div class="field-record-item">
+            <span class="record-label">Geographic Coordinates</span>
+            <span class="record-value">${elephant.coordinates[0]} N, ${elephant.coordinates[1]} E</span>
+          </div>
+          <div class="field-record-item full-width">
+            <span class="record-label">Physical Anatomy &amp; Tusks</span>
+            <span class="record-value">${elephant.physicalTraits}</span>
+          </div>
+          ${elephant.causeOfDeath && elephant.causeOfDeath !== 'None' ? `
+          <div class="field-record-item full-width fate-record">
+            <span class="record-label">Fate and Cause of Death</span>
+            <span class="record-value">${elephant.causeOfDeath}</span>
+          </div>` : ''}
+        </div>
       </div>
 
-      <h2>Significance & Cultural Legacy</h2>
+      <h2>Significance and Cultural Legacy</h2>
       <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-primary);">
         ${elephant.whyFamous}
       </p>
@@ -104,8 +118,8 @@ ${schemaJson}
       </blockquote>
 
       <div style="margin-top: 3rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-        <a href="/catalog.html" class="btn btn-secondary">&larr; Return to Tusker Registry</a>
-        <a href="/map.html" class="btn btn-primary">Locate on Sanctuary Map &rarr;</a>
+        <a href="/catalog.html" class="btn btn-secondary">Return to Tusker Registry</a>
+        <a href="/map.html" class="btn btn-primary">Locate on Sanctuary Map</a>
       </div>
     </article>
   </main>

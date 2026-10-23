@@ -41,6 +41,11 @@
 
   <!-- Twitter Compact Card (Side-by-Side Thumbnail) -->
     <!-- Search Engine & Discovery Directives -->
+
+  <!-- OpenGraph Rich Card Metadata -->
+
+  <!-- Twitter Compact Card (Side-by-Side Thumbnail) -->
+    <!-- Search Engine & Discovery Directives -->
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
@@ -109,37 +114,33 @@
       </p>
     </section>
 
-    <!-- Interactive Filter Toolbar -->
-    <section class="filter-bar" aria-label="Catalog Filtering Controls">
-      <div class="search-input-wrap">
-        <input 
-          type="search" 
-          id="search-input" 
-          class="search-input" 
-          placeholder="Search by name, Sinhala title, location or keywords..." 
-          aria-label="Search elephants"
-        >
+    <!-- Interactive Archival Filter Toolbar -->
+    <section class="archival-filter-panel" aria-label="Catalog Filtering Controls">
+      <input 
+        type="search" 
+        id="search-input" 
+        class="search-field-input" 
+        placeholder="Filter by name, Sinhala title, tank basin, or field notes..." 
+        aria-label="Search elephants"
+      >
+
+      <div class="filter-segments-row">
+        <span class="filter-segment-label">Status</span>
+        <div class="segment-buttons">
+          <button class="segment-btn active" data-filter-status="all">All</button>
+          <button class="segment-btn" data-filter-status="Alive">Alive</button>
+          <button class="segment-btn" data-filter-status="Deceased">Deceased</button>
+          <button class="segment-btn" data-filter-status="Historical">Historical</button>
+        </div>
       </div>
 
-      <div style="display: flex; flex-direction: column; gap: 0.6rem; width: 100%;">
-        <div style="display: flex; gap: 0.8rem; align-items: center; flex-wrap: wrap;">
-          <span style="font-size: 0.82rem; text-transform: uppercase; color: var(--accent-gold); font-weight: 600;">Status:</span>
-          <div class="filter-group">
-            <button class="filter-pill active" data-filter-status="all">All</button>
-            <button class="filter-pill" data-filter-status="Alive">Alive</button>
-            <button class="filter-pill" data-filter-status="Deceased">Deceased</button>
-            <button class="filter-pill" data-filter-status="Historical">Historical</button>
-          </div>
-        </div>
-
-        <div style="display: flex; gap: 0.8rem; align-items: center; flex-wrap: wrap;">
-          <span style="font-size: 0.82rem; text-transform: uppercase; color: var(--accent-gold); font-weight: 600;">Category:</span>
-          <div class="filter-group">
-            <button class="filter-pill active" data-filter-category="all">All</button>
-            <button class="filter-pill" data-filter-category="Wild Tusker">Wild Tusker</button>
-            <button class="filter-pill" data-filter-category="Temple Custodian">Temple Custodian</button>
-            <button class="filter-pill" data-filter-category="Historical Legend">Historical Legend</button>
-          </div>
+      <div class="filter-segments-row">
+        <span class="filter-segment-label">Classification</span>
+        <div class="segment-buttons">
+          <button class="segment-btn active" data-filter-category="all">All</button>
+          <button class="segment-btn" data-filter-category="Wild Tusker">Wild Tusker</button>
+          <button class="segment-btn" data-filter-category="Temple Custodian">Temple Custodian</button>
+          <button class="segment-btn" data-filter-category="Historical Legend">Historical Legend</button>
         </div>
       </div>
     </section>

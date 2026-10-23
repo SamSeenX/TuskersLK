@@ -1,8 +1,8 @@
-/* Card and Filter Styles: Wanali Archive */
+/* Dossier Card & Index Styles: Wanali Archival System */
 .tusker-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 1.8rem;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
   margin: 2rem 0;
 }
 
@@ -10,15 +10,15 @@
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  padding: 1.5rem;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
-  transition: transform var(--transition-smooth), border-color var(--transition-smooth);
+  transition: border-color var(--transition-smooth), transform var(--transition-smooth);
 }
 
 .tusker-card:hover {
-  transform: translateY(-3px);
-  border-color: var(--border-accent);
+  border-color: var(--border-strong);
+  transform: translateY(-2px);
 }
 
 .card-image-wrap {
@@ -27,27 +27,19 @@
   aspect-ratio: 16 / 10;
   border-radius: var(--radius-sm);
   overflow: hidden;
-  margin-bottom: 0.9rem;
+  margin-bottom: 1rem;
   background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
 }
 
-.card-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform var(--transition-smooth);
-}
-
-.tusker-card:hover .card-image { transform: scale(1.04); }
+.card-image { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 .card-image-credit {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  padding: 0.2rem 0.5rem;
+  bottom: 0; left: 0; right: 0;
+  padding: 0.25rem 0.6rem;
   font-size: 0.72rem;
-  background: rgba(14, 21, 18, 0.88);
+  background: rgba(10, 14, 12, 0.9);
   color: var(--text-muted);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -59,7 +51,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.6rem;
 }
 
 .tusker-name {
@@ -67,101 +59,102 @@
   font-size: 1.35rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.15rem;
+  line-height: 1.25;
 }
 
 .tusker-sinhala {
   font-size: 0.95rem;
   color: var(--accent-gold);
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.9rem;
 }
 
-.tusker-info-list {
-  list-style: none;
-  font-size: 0.9rem;
-  margin-bottom: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.45rem;
-}
-
-.tusker-info-item {
-  color: var(--text-secondary);
-  display: flex;
-  gap: 0.4rem;
-}
-
-.tusker-info-item strong {
-  color: var(--text-primary);
-  min-width: 95px;
-}
-
-.tusker-famous-quote {
-  font-size: 0.92rem;
-  color: var(--text-secondary);
-  background: var(--bg-surface);
-  border-left: 3px solid var(--accent-gold);
-  padding: 0.75rem 0.9rem;
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-  margin-top: auto;
-  line-height: 1.5;
-}
-
-.card-footer {
-  margin-top: 1.2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 0.8rem;
+.dossier-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  padding: 0.75rem 0;
   border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 0.9rem;
+  font-size: 0.85rem;
 }
 
-/* Filter Controls */
-.filter-bar {
+.dossier-field { display: flex; flex-direction: column; }
+.dossier-label { color: var(--text-muted); font-size: 0.75rem; }
+.dossier-value { color: var(--text-primary); font-weight: 500; }
+
+.dossier-fate {
+  grid-column: 1 / -1;
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  line-height: 1.4;
+  padding-top: 0.3rem;
+}
+
+.dossier-fate strong { color: var(--text-primary); }
+
+.tusker-narrative {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-bottom: 1.25rem;
+  flex: 1;
+}
+
+.card-action {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-gold);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--transition-smooth);
+}
+
+.card-action:hover { border-color: var(--accent-gold); }
+
+/* Archival Index Controls */
+.archival-filter-panel {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  padding: 1.2rem;
+  padding: 1.25rem 1.5rem;
   margin: 2rem 0;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
-.search-input-wrap { flex: 1; min-width: 250px; }
-
-.search-input {
+.search-field-input {
   width: 100%;
-  padding: 0.65rem 1rem;
-  background: var(--bg-card);
+  padding: 0.75rem 1rem;
+  background: var(--bg-primary);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
   color: var(--text-primary);
   font-size: 0.95rem;
   outline: none;
-  transition: border-color var(--transition-smooth);
 }
 
-.search-input:focus { border-color: var(--accent-gold); }
+.search-field-input:focus { border-color: var(--accent-gold); }
+.filter-segments-row { display: flex; flex-wrap: wrap; gap: 1.2rem 2rem; align-items: center; }
+.filter-segment-label { font-size: 0.8rem; color: var(--accent-gold); font-weight: 600; }
+.segment-buttons { display: flex; gap: 0.4rem; flex-wrap: wrap; }
 
-.filter-group { display: flex; gap: 0.5rem; flex-wrap: wrap; }
-
-.filter-pill {
-  padding: 0.4rem 0.85rem;
+.segment-btn {
+  padding: 0.35rem 0.75rem;
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
   color: var(--text-secondary);
-  font-size: 0.85rem;
-  font-weight: 500;
+  font-size: 0.82rem;
   cursor: pointer;
   transition: all var(--transition-smooth);
 }
 
-.filter-pill:hover,
-.filter-pill.active {
+.segment-btn:hover,
+.segment-btn.active {
   background: var(--accent-gold-light);
   border-color: var(--accent-gold);
   color: var(--accent-gold);

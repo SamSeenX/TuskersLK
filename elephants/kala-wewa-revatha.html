@@ -78,14 +78,14 @@
 </header>
   <main class="container" style="padding-top: 2.5rem; padding-bottom: 4rem;">
     <article class="prose">
-      <div style="display: flex; gap: 0.6rem; align-items: center; margin-bottom: 1rem; flex-wrap: wrap;">
-        <span class="badge badge-deceased">Deceased</span>
-        <span class="badge badge-category">Wild Tusker</span>
-        <span style="font-size: 0.85rem; color: var(--text-muted);">c. 1970 – 2021 (Aged approx. 50)</span>
-      </div>
-      <h1 style="font-size: 2.4rem; line-height: 1.15; margin: 0 0 0.3rem;">Kala Wewa Revatha</h1>
-      <div style="font-size: 1.25rem; color: var(--accent-gold); font-family: var(--font-serif); margin-bottom: 1.5rem;">
-        කලාවැවේ රේවත
+      <div class="archival-profile-header">
+        <div class="archival-meta-line">
+          <span class="badge badge-deceased">Deceased</span>
+          <span class="badge badge-category">Wild Tusker</span>
+          <span class="archival-lifespan">c. 1970 – 2021 (Aged approx. 50)</span>
+        </div>
+        <h1 class="tusker-profile-title">Kala Wewa Revatha</h1>
+        <div class="tusker-profile-sinhala">කලාවැවේ රේවත</div>
       </div>
 
       
@@ -98,20 +98,34 @@
       </figure>
   
 
-      <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.5rem; margin-bottom: 2rem;">
-        <h2 style="font-size: 1.1rem; margin-top: 0; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 0.05em;">
-          Registry Record
-        </h2>
-        <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.95rem;">
-          <li><strong>Roaming Territory:</strong> Kala Wewa and Balalu Wewa Sanctuary</li>
-          <li><strong>Habitat & Sanctuary:</strong> Kala Wewa National Park and Balalu Wewa wetland reserve</li>
-          <li><strong>Physical Anatomy:</strong> Dark black pigmentation, thick downward-sloping symmetrical tusks, uniquely calm disposition around humans</li>
-          <li><strong>Geographic Coordinates:</strong> [8.0167, 80.5333]</li>
-          <li><strong>Fate & Cause of Death:</strong> Electrocuted in March 2021 by an illegal electric fence erected around private farmland bordering the sanctuary.</li>
-        </ul>
+      <div class="field-record-card">
+        <h2 class="field-record-heading">Archival Field Dossier</h2>
+        <div class="field-record-grid">
+          <div class="field-record-item">
+            <span class="record-label">Roaming Territory</span>
+            <span class="record-value">Kala Wewa and Balalu Wewa Sanctuary</span>
+          </div>
+          <div class="field-record-item">
+            <span class="record-label">Habitat Sanctuary</span>
+            <span class="record-value">Kala Wewa National Park and Balalu Wewa wetland reserve</span>
+          </div>
+          <div class="field-record-item">
+            <span class="record-label">Geographic Coordinates</span>
+            <span class="record-value">8.0167 N, 80.5333 E</span>
+          </div>
+          <div class="field-record-item full-width">
+            <span class="record-label">Physical Anatomy &amp; Tusks</span>
+            <span class="record-value">Dark black pigmentation, thick downward-sloping symmetrical tusks, uniquely calm disposition around humans</span>
+          </div>
+          
+          <div class="field-record-item full-width fate-record">
+            <span class="record-label">Fate and Cause of Death</span>
+            <span class="record-value">Electrocuted in March 2021 by an illegal electric fence erected around private farmland bordering the sanctuary.</span>
+          </div>
+        </div>
       </div>
 
-      <h2>Significance & Cultural Legacy</h2>
+      <h2>Significance and Cultural Legacy</h2>
       <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-primary);">
         The beloved gentle giant of the Kala Wewa tank ecosystem. Thousands of nature photographers and local families visited Kala Wewa each dry season specifically to view Revatha feeding peacefully among lotus beds.
       </p>
@@ -121,8 +135,8 @@
       </blockquote>
 
       <div style="margin-top: 3rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-        <a href="/catalog.html" class="btn btn-secondary">&larr; Return to Tusker Registry</a>
-        <a href="/map.html" class="btn btn-primary">Locate on Sanctuary Map &rarr;</a>
+        <a href="/catalog.html" class="btn btn-secondary">Return to Tusker Registry</a>
+        <a href="/map.html" class="btn btn-primary">Locate on Sanctuary Map</a>
       </div>
     </article>
   </main>
