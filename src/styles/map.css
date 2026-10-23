@@ -64,6 +64,17 @@
   z-index: 1;
 }
 
+/* Reset Leaflet divIcon artifacts */
+.leaflet-div-icon {
+  background: transparent !important;
+  border: none !important;
+}
+
+.leaflet-container img.leaflet-tile {
+  max-width: none !important;
+  max-height: none !important;
+}
+
 /* Dark Mode Tile Filter for Free OpenStreetMap */
 [data-theme="dark"] .leaflet-tile {
   filter: brightness(0.68) invert(1) contrast(1.7) hue-rotate(185deg) saturate(0.4);

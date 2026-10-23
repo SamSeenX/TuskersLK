@@ -99,6 +99,16 @@ export function getFooterHtml() {
         </ul>
       </div>
       <div class="footer-col">
+        <h4>Field Guides</h4>
+        <ul>
+          <li><a href="/why-tuskless.html">Why Are Tuskers Rare?</a></li>
+          <li><a href="/gathering.html">The Great Gathering</a></li>
+          <li><a href="/human-elephant-conflict.html">Shared Landscapes &amp; Coexistence</a></li>
+          <li><a href="/relic-bearers.html">Sacred Relic Bearers</a></li>
+          <li><a href="/sanctuaries.html">Sanctuaries &amp; Corridors</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
         <h4>Trust and Transparency</h4>
         <ul>
           <li><a href="/privacy.html">Privacy Policy</a></li>

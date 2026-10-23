@@ -16,9 +16,9 @@ export function initTuskerMap(elephants, mapElementId = 'tusker-map-canvas') {
     return;
   }
 
-  // Centered on Sri Lanka
+  // Centered on the national geographic center of Sri Lanka
   const map = window.L.map(mapElementId, {
-    center: [7.8731, 80.7718],
+    center: [7.65, 80.70],
     zoom: 8,
     minZoom: 7,
     maxZoom: 13,
@@ -59,7 +59,7 @@ export function initTuskerMap(elephants, mapElementId = 'tusker-map-canvas') {
             <div><strong>Territory:</strong> ${elephant.locationName}</div>
             ${elephant.causeOfDeath && elephant.causeOfDeath !== 'None' ? `<div><strong>Fate:</strong> ${elephant.causeOfDeath}</div>` : ''}
           </div>
-          <a href="/elephants/${elephant.id}.html" class="map-popup-link">Explore Full Chronicle &rarr;</a>
+          <a href="/elephants/${elephant.id}.html" class="map-popup-link">Explore Full Chronicle</a>
         </div>
       `;
 
@@ -70,6 +70,15 @@ export function initTuskerMap(elephants, mapElementId = 'tusker-map-canvas') {
   }
 
   renderPins('all');
+
+  // Trigger size recalculation after DOM/layout finishes mounting
+  setTimeout(() => {
+    map.invalidateSize();
+  }, 120);
+
+  window.addEventListener('resize', () => {
+    map.invalidateSize();
+  });
 
   // Wire map filter buttons if present
   const mapFilters = document.querySelectorAll('[data-map-filter]');

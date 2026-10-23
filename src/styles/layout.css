@@ -44,7 +44,7 @@ body {
 }
 
 .footer-tagline { color: var(--text-muted); font-size: 0.95rem; max-width: 380px; }
-.footer-nav { display: flex; gap: 2.5rem; justify-content: flex-end; }
+.footer-nav { display: flex; gap: 2.5rem; justify-content: flex-end; flex-wrap: wrap; }
 
 .footer-col h4 {
   font-size: 0.85rem;

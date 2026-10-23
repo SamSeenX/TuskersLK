@@ -26,5 +26,10 @@ export const crossReferenceDict = [
   { term: 'Kandula the War Tusker', url: '/elephants/kandula-legend.html', label: 'Kandula War Tusker' },
   { term: 'Kataragama Wasana', url: '/elephants/kataragama-wasana.html', label: 'Kataragama Wasana' },
   { term: 'Indiraja of Dalada Maligawa', url: '/elephants/maligawa-indiraja.html', label: 'Indiraja Dalada Maligawa' },
-  { term: 'Podi Dala Poottuwa', url: '/elephants/podi-dala-poottuwa.html', label: 'Podi Dala Poottuwa' }
+  { term: 'Podi Dala Poottuwa', url: '/elephants/podi-dala-poottuwa.html', label: 'Podi Dala Poottuwa' },
+  { term: 'Great Gathering', url: '/gathering.html', label: 'The Great Elephant Gathering of Minneriya' },
+  { term: 'Human-Elephant Conflict', url: '/human-elephant-conflict.html', label: 'Human-Elephant Coexistence' },
+  { term: 'Sacred Tooth Relic', url: '/relic-bearers.html', label: 'Sacred Relic Bearers Tradition' },
+  { term: 'Maha Hasthi Lakshana', url: '/relic-bearers.html', label: 'Maha Hasthi Lakshana Criteria' },
+  { term: 'tuskless', url: '/why-tuskless.html', label: 'Tuskless Elephant Genetics in Sri Lanka' }
 ];

@@ -21,7 +21,7 @@ function findHtmlPages() {
 
     const files = fs.readdirSync(fullDir);
     files.forEach((file) => {
-      if (!file.endsWith('.html')) return;
+      if (!file.endsWith('.html') || file === '404.html') return;
 
       let urlPath = dir ? `/${dir}/${file}` : (file === 'index.html' ? '/' : `/${file}`);
       let priority = '0.8';
