@@ -1,0 +1,77 @@
+/**
+ * Wild Icons of National Parks & Flood Plains
+ */
+export const PARK_ELEPHANTS = [
+  {
+    id: 'somawathiya-sando',
+    name: 'Somawathiya Sando',
+    sinhalaName: 'සෝමාවතියේ සැන්ඩෝ',
+    status: 'Alive',
+    category: 'Wild Tusker',
+    lifespan: 'c. 1985 – Present (Aged approx. 41)',
+    coordinates: [8.1167, 81.1667],
+    locationName: 'Somawathiya National Park, Polonnaruwa',
+    causeOfDeath: 'None. Roaming wild in the Mahaweli flood plains.',
+    whyFamous: 'Named Sando for his colossal body mass and broad muscular build. He is one of the most imposing wild tuskers in the Eastern Province, frequently sighted traversing the sacred Somawathiya marshlands and Mahaweli riverbanks.',
+    physicalTraits: 'Massive muscular build, broad forehead, heavy outward-curving tusks',
+    habitat: 'Somawathiya river basin, Sungavila, and flood plains',
+    image: '/images/elephants/somawathiya-sando.jpg',
+    imageCaption: 'Somawathiya Sando traversing the lush Mahaweli river floodplains',
+    imageCredit: 'Wanali Wildlife Field Documentation',
+    imageLicense: 'Creative Commons CC-BY 4.0'
+  },
+  {
+    id: 'somawathiya-mahasen',
+    name: 'Somawathiya Mahasen',
+    sinhalaName: 'සෝමාවතියේ මහසෙන්',
+    status: 'Alive',
+    category: 'Wild Tusker',
+    lifespan: 'c. 1988 – Present (Aged approx. 38)',
+    coordinates: [8.1450, 81.1820],
+    locationName: 'Somawathiya Sanctuary & Kandakadu, North Central Province',
+    causeOfDeath: 'None. Living in the wild under park monitoring.',
+    whyFamous: 'Named after ancient monarch King Mahasen who built the great tanks. Renowned among researchers for possessing some of the longest and most symmetrical ivory tusks found on any wild elephant in Sri Lanka today.',
+    physicalTraits: 'Extraordinarily long, parallel ivory tusks, tall wild stature, cautious temperament',
+    habitat: 'Somawathiya National Park and Kandakadu jungle corridors',
+    image: '/images/elephants/somawathiya-mahasen.jpg',
+    imageCaption: 'Somawathiya Mahasen emerging from the tree line with his long ivory tusks',
+    imageCredit: 'Wanali Wildlife Field Documentation',
+    imageLicense: 'Creative Commons CC-BY 4.0'
+  },
+  {
+    id: 'yala-gemunu',
+    name: 'Gemunu of Yala',
+    sinhalaName: 'යාලේ ගැමුණු',
+    status: 'Alive',
+    category: 'Wild Tusker',
+    lifespan: 'c. 1991 – Present (Aged approx. 35)',
+    coordinates: [6.3667, 81.5167],
+    locationName: 'Yala National Park (Ruhuna), Southern Province',
+    causeOfDeath: 'None. Living wild in Yala National Park.',
+    whyFamous: 'The most famous and charismatic wild bull elephant in Yala National Park. Known to hundreds of thousands of local and international visitors for gently inspecting safari jeeps for fruit, he is a living legend of the Ruhuna wilderness.',
+    physicalTraits: 'Broad wild physique, ear notches, bold and inquisitive disposition',
+    habitat: 'Yala National Park Block 1 and coastal thorn scrub',
+    image: '/images/elephants/yala-gemunu.jpg',
+    imageCaption: 'Gemunu strolling along the red earth safari tracks of Yala National Park',
+    imageCredit: 'Wikimedia Commons / CC-BY-SA 3.0 (Photo: Bernard Gagnon)',
+    imageLicense: 'Creative Commons CC-BY-SA 3.0'
+  },
+  {
+    id: 'minneriya-unicorn',
+    name: 'Unicorn of Minneriya (Ekadanta)',
+    sinhalaName: 'මින්නේරියේ යුනිකෝන්',
+    status: 'Deceased',
+    category: 'Wild Tusker',
+    lifespan: 'c. 1980 – 2019 (Aged approx. 39)',
+    coordinates: [8.0333, 80.9000],
+    locationName: 'Minneriya National Park & Moragaswewa, North Central Province',
+    causeOfDeath: 'Succumbed to severe gunshot wounds sustained outside the protected park boundary in 2019.',
+    whyFamous: 'The iconic single-tusked dominant bull (Ekadanta) of the great Minneriya Gathering. Recognized immediately by wildlife enthusiasts across the world for his solitary, razor-sharp ivory tusk and undisputed leadership around the Minneriya tank.',
+    physicalTraits: 'Single massive, sharp, upward-curving left tusk, dominant matriarchal escort, towering back ridge',
+    habitat: 'Minneriya tank catchment and Kaudulla wildlife corridor',
+    image: '/images/elephants/minneriya-unicorn.jpg',
+    imageCaption: 'The single-tusked bull Unicorn surveying the open bed of Minneriya reservoir',
+    imageCredit: 'Wikimedia Commons / CC-BY-SA 2.5',
+    imageLicense: 'Creative Commons CC-BY-SA 2.5'
+  }
+];

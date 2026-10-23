@@ -3,6 +3,24 @@
  */
 export const CUSTODIAN_ELEPHANTS = [
   {
+    id: 'maligawa-raja',
+    name: 'Maligawa Raja (The Paramount Casket Bearer)',
+    sinhalaName: 'මාලිගාවේ රාජා',
+    status: 'Deceased',
+    category: 'Temple Custodian',
+    lifespan: 'c. 1913 – July 1988 (Aged approx. 75)',
+    coordinates: [7.2936, 80.6413],
+    locationName: 'Sri Dalada Maligawa, Kandy',
+    causeOfDeath: 'Natural passing due to advanced old age in July 1988. Mourned across Sri Lanka with a national day of mourning.',
+    whyFamous: 'The most celebrated temple tusker in modern history. Carried the Sacred Casket of the Tooth Relic at the Kandy Esala Perahera for 37 consecutive years with unmatched majesty and grace. Declared a National Treasure in 1986 by Presidential decree. His preserved remains are enshrined in a dedicated museum within the Dalada Maligawa.',
+    physicalTraits: 'Two long curving tusks that touched the ground, perfect seven-point posture, exceptional dignity during religious processions',
+    habitat: 'Sri Dalada Maligawa, Kandy',
+    image: '/images/elephants/maligawa-raja.jpg',
+    imageCaption: 'Maligawa Raja enshrined and honored at the dedicated museum in the Temple of the Tooth',
+    imageCredit: 'Wikimedia Commons / CC-BY-SA 3.0 (Photo: Rehman)',
+    imageLicense: 'Creative Commons CC-BY-SA 3.0'
+  },
+  {
     id: 'nadungamuwa-raja',
     name: 'Nadungamuwa Raja',
     sinhalaName: 'නැදුන්ගමුවේ රාජා',
@@ -55,6 +73,42 @@ export const CUSTODIAN_ELEPHANTS = [
     imageCaption: 'Heiyantuduwa Raja bearing the Sacred Casket during the annual Kandy Esala Perahera',
     imageCredit: 'National Museum of Colombo & Family of William Gunasekara',
     imageLicense: 'Educational Public Heritage'
+  },
+  {
+    id: 'kelani-raja',
+    name: 'Kelani Raja',
+    sinhalaName: 'කැලණි රාජා',
+    status: 'Deceased',
+    category: 'Temple Custodian',
+    lifespan: 'c. 1960 – 2018 (Aged approx. 58)',
+    coordinates: [6.9531, 79.9234],
+    locationName: 'Kelaniya Raja Maha Vihara, Gampaha',
+    causeOfDeath: 'Natural age-related complications in 2018.',
+    whyFamous: 'The chief ceremonial tusker of the Kelaniya Raja Maha Vihara for over three decades, bearing the sacred relics across the historic Duruthu Perahera along the banks of the Kelani River.',
+    physicalTraits: 'Long downward-tapering tusks, tranquil temper, stately stride during night pageants',
+    habitat: 'Kelaniya Raja Maha Vihara sacred grounds',
+    image: '/images/elephants/kelani-raja.jpg',
+    imageCaption: 'Kelani Raja standing peacefully beside the sacred stupa at Kelaniya Raja Maha Vihara',
+    imageCredit: 'Wanali Cultural Heritage Documentation',
+    imageLicense: 'Creative Commons CC-BY 4.0'
+  },
+  {
+    id: 'muthu-raja',
+    name: 'Muthu Raja (Sak Surin)',
+    sinhalaName: 'මුතු රාජා',
+    status: 'Alive',
+    category: 'Temple Custodian',
+    lifespan: 'c. 1993 – Present (Aged approx. 31)',
+    coordinates: [6.5667, 80.0000],
+    locationName: 'Kande Vihara, Aluthgama and Chiang Mai',
+    causeOfDeath: 'None. Living in rehabilitation under specialized veterinary sanctuary care.',
+    whyFamous: 'Gifted by the Royal Family of Thailand to the Government of Sri Lanka in 2001. After decades of service at Kande Vihara, a public advocacy campaign regarding his health led to his historic repatriation to Thailand in July 2023 for intensive medical rehabilitation.',
+    physicalTraits: 'Long sweeping symmetrical ivory tusks, distinct Thai elephant conformation, gentle temperament',
+    habitat: 'Kande Vihara sacred estate and Thai Elephant Conservation Center',
+    image: '/images/elephants/muthu-raja.jpg',
+    imageCaption: 'Muthu Raja peacefully resting and recuperating under medical care',
+    imageCredit: 'Wikimedia Commons / CC-BY-SA 2.0 (Photo: McKay Savage)',
+    imageLicense: 'Creative Commons CC-BY-SA 2.0'
   },
   {
     id: 'kandula-legend',

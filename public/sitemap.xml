@@ -91,13 +91,37 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wanali.srilanka.wildlife/elephants/kelani-raja.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://wanali.srilanka.wildlife/elephants/maligawa-indiraja.html</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wanali.srilanka.wildlife/elephants/maligawa-raja.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://wanali.srilanka.wildlife/elephants/millangoda-raja.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wanali.srilanka.wildlife/elephants/minneriya-unicorn.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wanali.srilanka.wildlife/elephants/muthu-raja.html</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -121,7 +145,25 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://wanali.srilanka.wildlife/elephants/somawathiya-mahasen.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wanali.srilanka.wildlife/elephants/somawathiya-sando.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://wanali.srilanka.wildlife/elephants/thirappane-agbo.html</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://wanali.srilanka.wildlife/elephants/yala-gemunu.html</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
