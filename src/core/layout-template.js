@@ -15,8 +15,8 @@ const NAV_ITEMS = [
 ];
 
 export function getSeoMetaHtml({
-  title = 'Wanali: Sri Lankan Tuskers and Elephants Registry',
-  description = 'Interactive geospatial archive and comprehensive catalog of Sri Lanka famous wild tuskers, sacred temple custodians, and historic legends.',
+  title = "Wanali: Sri Lanka's Notable Elephants & Famous Tuskers Archive",
+  description = "The definitive geospatial archive and comprehensive registry of Sri Lanka's notable elephants, famous wild tuskers, and historic legends.",
   path = '/',
   image = OG_IMAGE_URL,
   type = 'website'

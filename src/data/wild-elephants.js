@@ -1,5 +1,5 @@
 /**
- * Wild Tuskers of Sri Lanka
+ * Wild Tuskers of Sri Lanka: Northwest & Tank Basin Icons
  */
 export const WILD_ELEPHANTS = [
   {
@@ -36,6 +36,24 @@ export const WILD_ELEPHANTS = [
     image: '/images/elephants/dala-poottuwa.jpg',
     imageCaption: 'The iconic Galgamuwa Dala Poottuwa displaying his distinctive crossed ivory tusks',
     imageCredit: 'Wanali Archival Wildlife Reconstruction Studio',
+    imageLicense: 'Creative Commons CC-BY 4.0'
+  },
+  {
+    id: 'walagamba-tusker',
+    name: 'Walagamba of Kala Wewa',
+    sinhalaName: 'වලගම්බා',
+    status: 'Deceased',
+    category: 'Wild Tusker',
+    lifespan: 'c. 1970 – 2018 (Aged approx. 48)',
+    coordinates: [8.0200, 80.3500],
+    locationName: 'Kala Wewa and Galgamuwa, North Central Province',
+    causeOfDeath: 'Old age complications combined with past gunshot trap injuries.',
+    whyFamous: 'Named after ancient monarch King Walagamba, renowned as one of the largest dominant alpha tuskers recorded in the North Central tank basins. His commanding presence and calm intelligence around Kala Wewa influenced tusker genetics across the region.',
+    physicalTraits: 'Massive broad skull, thick symmetrical down-pointing tusks, deep ear pigmentation',
+    habitat: 'Kala Wewa basin and Kahalla-Pallekele sanctuary',
+    image: '/images/elephants/walagamba-tusker.jpg',
+    imageCaption: 'Walagamba the dominant alpha tusker of Kala Wewa surveying the basin',
+    imageCredit: 'Wanali Wildlife Field Documentation',
     imageLicense: 'Creative Commons CC-BY 4.0'
   },
   {

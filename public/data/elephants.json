@@ -42,6 +42,27 @@
     "imageLicense": "Creative Commons CC-BY 4.0"
   },
   {
+    "id": "walagamba-tusker",
+    "name": "Walagamba of Kala Wewa",
+    "sinhalaName": "වලගම්බා",
+    "status": "Deceased",
+    "category": "Wild Tusker",
+    "lifespan": "c. 1970 – 2018 (Aged approx. 48)",
+    "coordinates": [
+      8.02,
+      80.35
+    ],
+    "locationName": "Kala Wewa and Galgamuwa, North Central Province",
+    "causeOfDeath": "Old age complications combined with past gunshot trap injuries.",
+    "whyFamous": "Named after ancient monarch King Walagamba, renowned as one of the largest dominant alpha tuskers recorded in the North Central tank basins. His commanding presence and calm intelligence around Kala Wewa influenced tusker genetics across the region.",
+    "physicalTraits": "Massive broad skull, thick symmetrical down-pointing tusks, deep ear pigmentation",
+    "habitat": "Kala Wewa basin and Kahalla-Pallekele sanctuary",
+    "image": "/images/elephants/walagamba-tusker.jpg",
+    "imageCaption": "Walagamba the dominant alpha tusker of Kala Wewa surveying the basin",
+    "imageCredit": "Wanali Wildlife Field Documentation",
+    "imageLicense": "Creative Commons CC-BY 4.0"
+  },
+  {
     "id": "panamure-hasthiraja",
     "name": "Panamure Hasthi Rajaya",
     "sinhalaName": "පනාමුරේ ඇත් රජා",
@@ -144,6 +165,69 @@
     "image": "/images/elephants/podi-dala-poottuwa.jpg",
     "imageCaption": "Young Podi Dala Poottuwa showing his emergent crossed tusks in Reswehera",
     "imageCredit": "Wanali Conservation Field Documentation",
+    "imageLicense": "Creative Commons CC-BY 4.0"
+  },
+  {
+    "id": "wasgamuwa-sumedha",
+    "name": "Sumedha of Wasgamuwa",
+    "sinhalaName": "සුමේධ",
+    "status": "Alive",
+    "category": "Wild Tusker",
+    "lifespan": "c. 1986 – Present (Aged approx. 40)",
+    "coordinates": [
+      7.75,
+      80.95
+    ],
+    "locationName": "Wasgamuwa, Minneriya and Kaudulla National Parks",
+    "causeOfDeath": "None. Roaming wild under wildlife ranger tracking.",
+    "whyFamous": "A celebrated wild bull with long sweeping ivory tusks, famous for leading seasonal migrations across Minneriya and Kaudulla reservoirs. Monitored closely by conservationists as a keystone breeder of the Mahaweli river basin.",
+    "physicalTraits": "Long curving ivory tusks, distinctive ear tear notch, calm and cautious demeanor",
+    "habitat": "Wasgamuwa riverine forests and Minneriya tank ecosystem",
+    "image": "/images/elephants/wasgamuwa-sumedha.jpg",
+    "imageCaption": "Sumedha standing along the riverine forest edge of Wasgamuwa National Park",
+    "imageCredit": "Wanali Wildlife Field Documentation",
+    "imageLicense": "Creative Commons CC-BY 4.0"
+  },
+  {
+    "id": "yala-nandamitra",
+    "name": "Nandamitra of Yala",
+    "sinhalaName": "නන්දමිත්‍ර",
+    "status": "Alive",
+    "category": "Wild Tusker",
+    "lifespan": "c. 1989 – Present (Aged approx. 37)",
+    "coordinates": [
+      6.41,
+      81.45
+    ],
+    "locationName": "Yala National Park and Sithulpawwa Sacred Precinct",
+    "causeOfDeath": "None. Living wild in Yala Block 1 and 2.",
+    "whyFamous": "Named after ancient King Dutugemunu giant warrior, Nandamitra is a dominant wild tusker of Ruhuna. Frequents the rocky ancient monastic grounds of Sithulpawwa and coastal lagoons of Yala.",
+    "physicalTraits": "Sharp tapered ivory tusks, tall sturdy back arch, confident approach",
+    "habitat": "Yala National Park Blocks 1 and 2, Sithulpawwa buffer jungle",
+    "image": "/images/elephants/yala-nandamitra.jpg",
+    "imageCaption": "Nandamitra navigating the coastal thorn forest of Yala National Park",
+    "imageCredit": "Wikimedia Commons / CC-BY-SA 3.0",
+    "imageLicense": "Creative Commons CC-BY-SA 3.0"
+  },
+  {
+    "id": "kalthota-tusker",
+    "name": "Kalthota Tusker (Mountain Escarpment Giant)",
+    "sinhalaName": "කල්තොට ඇතා",
+    "status": "Deceased",
+    "category": "Wild Tusker",
+    "lifespan": "c. 1978 – 2020 (Aged approx. 42)",
+    "coordinates": [
+      6.6167,
+      80.8333
+    ],
+    "locationName": "Kalthota, Balangoda and Uda Walawe, Sabaragamuwa",
+    "causeOfDeath": "Severe gunshot wounds sustained during human-wildlife encounters along agricultural boundaries in Balangoda.",
+    "whyFamous": "The fabled mountain-foothill wild tusker of the southern central escarpment. Adapted to traversing steep rocky slopes between Uda Walawe and the Horton Plains foothills, inspiring local folk tales.",
+    "physicalTraits": "Thick curved tusks with ground-sweeping tips, muscular forequarters, elusive nature",
+    "habitat": "Kalthota escarpment, Walawe river gorges, and Uda Walawe border",
+    "image": "/images/elephants/kalthota-tusker.jpg",
+    "imageCaption": "The elusive Kalthota tusker documented in the misty Walawe river valley",
+    "imageCredit": "Wanali Historic Wildlife Archive",
     "imageLicense": "Creative Commons CC-BY 4.0"
   },
   {

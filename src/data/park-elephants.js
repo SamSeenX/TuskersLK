@@ -1,7 +1,61 @@
 /**
- * Wild Icons of National Parks & Flood Plains
+ * Wild Icons of National Parks, Corridors & Flood Plains
  */
 export const PARK_ELEPHANTS = [
+  {
+    id: 'wasgamuwa-sumedha',
+    name: 'Sumedha of Wasgamuwa',
+    sinhalaName: 'සුමේධ',
+    status: 'Alive',
+    category: 'Wild Tusker',
+    lifespan: 'c. 1986 – Present (Aged approx. 40)',
+    coordinates: [7.7500, 80.9500],
+    locationName: 'Wasgamuwa, Minneriya and Kaudulla National Parks',
+    causeOfDeath: 'None. Roaming wild under wildlife ranger tracking.',
+    whyFamous: 'A celebrated wild bull with long sweeping ivory tusks, famous for leading seasonal migrations across Minneriya and Kaudulla reservoirs. Monitored closely by conservationists as a keystone breeder of the Mahaweli river basin.',
+    physicalTraits: 'Long curving ivory tusks, distinctive ear tear notch, calm and cautious demeanor',
+    habitat: 'Wasgamuwa riverine forests and Minneriya tank ecosystem',
+    image: '/images/elephants/wasgamuwa-sumedha.jpg',
+    imageCaption: 'Sumedha standing along the riverine forest edge of Wasgamuwa National Park',
+    imageCredit: 'Wanali Wildlife Field Documentation',
+    imageLicense: 'Creative Commons CC-BY 4.0'
+  },
+  {
+    id: 'yala-nandamitra',
+    name: 'Nandamitra of Yala',
+    sinhalaName: 'නන්දමිත්‍ර',
+    status: 'Alive',
+    category: 'Wild Tusker',
+    lifespan: 'c. 1989 – Present (Aged approx. 37)',
+    coordinates: [6.4100, 81.4500],
+    locationName: 'Yala National Park and Sithulpawwa Sacred Precinct',
+    causeOfDeath: 'None. Living wild in Yala Block 1 and 2.',
+    whyFamous: 'Named after ancient King Dutugemunu giant warrior, Nandamitra is a dominant wild tusker of Ruhuna. Frequents the rocky ancient monastic grounds of Sithulpawwa and coastal lagoons of Yala.',
+    physicalTraits: 'Sharp tapered ivory tusks, tall sturdy back arch, confident approach',
+    habitat: 'Yala National Park Blocks 1 and 2, Sithulpawwa buffer jungle',
+    image: '/images/elephants/yala-nandamitra.jpg',
+    imageCaption: 'Nandamitra navigating the coastal thorn forest of Yala National Park',
+    imageCredit: 'Wikimedia Commons / CC-BY-SA 3.0',
+    imageLicense: 'Creative Commons CC-BY-SA 3.0'
+  },
+  {
+    id: 'kalthota-tusker',
+    name: 'Kalthota Tusker (Mountain Escarpment Giant)',
+    sinhalaName: 'කල්තොට ඇතා',
+    status: 'Deceased',
+    category: 'Wild Tusker',
+    lifespan: 'c. 1978 – 2020 (Aged approx. 42)',
+    coordinates: [6.6167, 80.8333],
+    locationName: 'Kalthota, Balangoda and Uda Walawe, Sabaragamuwa',
+    causeOfDeath: 'Severe gunshot wounds sustained during human-wildlife encounters along agricultural boundaries in Balangoda.',
+    whyFamous: 'The fabled mountain-foothill wild tusker of the southern central escarpment. Adapted to traversing steep rocky slopes between Uda Walawe and the Horton Plains foothills, inspiring local folk tales.',
+    physicalTraits: 'Thick curved tusks with ground-sweeping tips, muscular forequarters, elusive nature',
+    habitat: 'Kalthota escarpment, Walawe river gorges, and Uda Walawe border',
+    image: '/images/elephants/kalthota-tusker.jpg',
+    imageCaption: 'The elusive Kalthota tusker documented in the misty Walawe river valley',
+    imageCredit: 'Wanali Historic Wildlife Archive',
+    imageLicense: 'Creative Commons CC-BY 4.0'
+  },
   {
     id: 'somawathiya-sando',
     name: 'Somawathiya Sando',
