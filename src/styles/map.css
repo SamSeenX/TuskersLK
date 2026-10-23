@@ -64,6 +64,11 @@
   z-index: 1;
 }
 
+/* Dark Mode Tile Filter for Free OpenStreetMap */
+[data-theme="dark"] .leaflet-tile {
+  filter: brightness(0.68) invert(1) contrast(1.7) hue-rotate(185deg) saturate(0.4);
+}
+
 /* Custom Marker Pins */
 .custom-tusker-pin {
   display: flex;

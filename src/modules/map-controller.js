@@ -25,15 +25,9 @@ export function initTuskerMap(elephants, mapElementId = 'tusker-map-canvas') {
     scrollWheelZoom: false
   });
 
-  // Dark Carto tile layer for immersive aesthetic
-  const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
-  const tileUrl = isDark
-    ? 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
-    : 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
-
-  window.L.tileLayer(tileUrl, {
-    attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
-    subdomains: 'abcd',
+  // OpenStreetMap tile layer (100% free, zero API key required)
+  window.L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors',
     maxZoom: 19
   }).addTo(map);
 
