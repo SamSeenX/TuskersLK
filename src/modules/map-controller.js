@@ -16,9 +16,9 @@ export function initTuskerMap(elephants, mapElementId = 'tusker-map-canvas') {
     return;
   }
 
-  // Centered on the national geographic center of Sri Lanka
+  // Centered on Sri Lanka with smooth panning and initial default
   const map = window.L.map(mapElementId, {
-    center: [7.65, 80.70],
+    center: [7.8731, 80.7718],
     zoom: 8,
     minZoom: 7,
     maxZoom: 13,
@@ -33,14 +33,26 @@ export function initTuskerMap(elephants, mapElementId = 'tusker-map-canvas') {
 
   const markersGroup = window.L.layerGroup().addTo(map);
 
+  function fitMapToElephants(items) {
+    if (!items || items.length === 0) return;
+    const coords = items.map((e) => e.coordinates).filter(Boolean);
+    if (coords.length === 0) return;
+    const bounds = window.L.latLngBounds(coords);
+    map.fitBounds(bounds, {
+      padding: [30, 30],
+      maxZoom: 9
+    });
+  }
+
   function renderPins(filterStatus = 'all') {
     markersGroup.clearLayers();
 
-    elephants.forEach((elephant) => {
-      if (filterStatus !== 'all' && elephant.status.toLowerCase() !== filterStatus.toLowerCase()) {
-        return;
-      }
+    const activeList = elephants.filter((elephant) => {
+      if (filterStatus === 'all') return true;
+      return elephant.status.toLowerCase() === filterStatus.toLowerCase();
+    });
 
+    activeList.forEach((elephant) => {
       const statusKey = elephant.status.toLowerCase();
       const customIcon = window.L.divIcon({
         className: `custom-tusker-pin ${statusKey}`,
@@ -67,6 +79,8 @@ export function initTuskerMap(elephants, mapElementId = 'tusker-map-canvas') {
       marker.bindPopup(popupHtml);
       markersGroup.addLayer(marker);
     });
+
+    fitMapToElephants(activeList.length > 0 ? activeList : elephants);
   }
 
   renderPins('all');
@@ -74,7 +88,8 @@ export function initTuskerMap(elephants, mapElementId = 'tusker-map-canvas') {
   // Trigger size recalculation after DOM/layout finishes mounting
   setTimeout(() => {
     map.invalidateSize();
-  }, 120);
+    fitMapToElephants(elephants);
+  }, 150);
 
   window.addEventListener('resize', () => {
     map.invalidateSize();

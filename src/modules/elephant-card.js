@@ -1,6 +1,6 @@
 /**
  * Elephant Card Component
- * Renders streamlined tusker cards with uniform heights and truncated descriptions
+ * Renders streamlined tusker cards with uniform heights and contained metadata
  */
 
 export function renderElephantCard(elephant) {
@@ -32,12 +32,12 @@ export function renderElephantCard(elephant) {
         <a href="${dossierUrl}" class="tusker-name-link">${elephant.name}</a>
       </h3>
       <div class="tusker-sinhala">${elephant.sinhalaName}</div>
-      <div class="dossier-grid">
-        <div class="dossier-field">
+      <div class="dossier-meta-list">
+        <div class="dossier-row">
           <span class="dossier-label">Lifespan</span>
           <span class="dossier-value">${elephant.lifespan}</span>
         </div>
-        <div class="dossier-field">
+        <div class="dossier-row">
           <span class="dossier-label">Location</span>
           <span class="dossier-value">${elephant.locationName}</span>
         </div>

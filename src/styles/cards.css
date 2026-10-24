@@ -17,6 +17,8 @@
   padding: 1.15rem;
   display: flex;
   flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
   transition: border-color var(--transition-smooth), transform var(--transition-smooth), box-shadow var(--transition-smooth);
 }
 
@@ -46,9 +48,7 @@
   transition: transform var(--transition-smooth);
 }
 
-.tusker-card:hover .card-image {
-  transform: scale(1.04);
-}
+.tusker-card:hover .card-image { transform: scale(1.04); }
 
 .card-image-credit {
   position: absolute;
@@ -88,9 +88,7 @@
   transition: color var(--transition-smooth);
 }
 
-.tusker-name-link:hover {
-  color: var(--accent-gold);
-}
+.tusker-name-link:hover { color: var(--accent-gold); }
 
 .tusker-sinhala {
   font-size: 0.88rem;
@@ -101,25 +99,42 @@
   text-overflow: ellipsis;
 }
 
-.dossier-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.5rem;
+.dossier-meta-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
   padding: 0.6rem 0;
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
   margin-bottom: 0.75rem;
-  font-size: 0.82rem;
+  min-width: 0;
 }
 
-.dossier-field { display: flex; flex-direction: column; }
-.dossier-label { color: var(--text-muted); font-size: 0.72rem; }
+.dossier-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.dossier-label {
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
 .dossier-value {
   color: var(--text-primary);
+  font-size: 0.82rem;
   font-weight: 500;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: right;
+  min-width: 0;
 }
 
 .tusker-narrative {
@@ -160,10 +175,5 @@
   border-color: var(--accent-gold);
 }
 
-.action-arrow {
-  transition: transform var(--transition-smooth);
-}
-
-.card-action:hover .action-arrow {
-  transform: translateX(3px);
-}
+.action-arrow { transition: transform var(--transition-smooth); }
+.card-action:hover .action-arrow { transform: translateX(3px); }
