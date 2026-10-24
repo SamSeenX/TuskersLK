@@ -15,7 +15,7 @@ export const CUSTODIAN_ELEPHANTS = [
     whyFamous: 'The most celebrated temple tusker in modern history. Carried the Sacred Casket of the Tooth Relic at the Kandy Esala Perahera for 37 consecutive years with unmatched majesty and grace. Declared a National Treasure in 1986 by Presidential decree. His preserved remains are enshrined in a dedicated museum within the Dalada Maligawa.',
     physicalTraits: 'Two long curving tusks that touched the ground, perfect seven-point posture, exceptional dignity during religious processions',
     habitat: 'Sri Dalada Maligawa, Kandy',
-    image: '/images/elephants/maligawa-raja.jpg',
+    image: '/images/elephants/archive/maligawa-raja.jpg',
     imageCaption: 'Maligawa Raja enshrined and honored at the dedicated museum in the Temple of the Tooth',
     imageCredit: 'Wikimedia Commons / CC-BY-SA 3.0 (Photo: Rehman)',
     imageLicense: 'Creative Commons CC-BY-SA 3.0'
@@ -33,7 +33,7 @@ export const CUSTODIAN_ELEPHANTS = [
     whyFamous: 'The revered 10.5-foot tall gentle giant who carried the sacred Casket of the Tooth Relic at the Kandy Esala Perahera for 15 years. He walked over 90 km along national highways from Gampaha to Kandy flanked by military escort and thousands of devotees.',
     physicalTraits: 'Over 10.5 ft shoulder height, two parallel floor-grazing tusks, calm and dignified demeanor',
     habitat: 'Nadungamuwa Estate, Gampaha and Sri Dalada Maligawa',
-    image: '/images/elephants/nadungamuwa-raja.jpg',
+    image: '/images/elephants/archive/nadungamuwa-raja.jpg',
     imageCaption: 'Nadungamuwa Raja marching peacefully along national highways to Kandy in 2018',
     imageCredit: 'Wikimedia Commons / CC-BY-SA 4.0',
     imageLicense: 'Creative Commons CC-BY-SA 4.0'
@@ -51,7 +51,7 @@ export const CUSTODIAN_ELEPHANTS = [
     whyFamous: 'Renowned for possessing the longest tusks of any Asian elephant in modern history, measuring over 7.5 feet in length that brushed the ground. Carried the sacred tooth relic casket for nearly two decades.',
     physicalTraits: '7.5 ft sweeping tusks that crossed in front, massive forehead dome, gentle giant of Sabaragamuwa',
     habitat: 'Molagoda Estate, Kegalle and Sri Dalada Maligawa',
-    image: '/images/elephants/millangoda-raja.jpg',
+    image: '/images/elephants/archive/millangoda-raja.jpg',
     imageCaption: 'Millangoda Raja displaying his record-setting 7.5-foot tusks in Molagoda',
     imageCredit: 'Wikimedia Commons / CC-BY-SA 3.0',
     imageLicense: 'Creative Commons CC-BY-SA 3.0'
@@ -69,7 +69,7 @@ export const CUSTODIAN_ELEPHANTS = [
     whyFamous: 'Carried the Sacred Relic Casket of the Buddha at the Dalada Maligawa for 11 years following the passing of Maligawa Raja. Also carried the relics at the Kelaniya Duruthu Perahera and Bellanwila Perahera.',
     physicalTraits: 'Broad forehead, upward-sweeping ivory tusks of equal length, regal posture during Buddhist processions',
     habitat: 'Heiyantuduwa walauwa, Kelaniya Raja Maha Vihara and Kandy',
-    image: '/images/elephants/heiyantuduwa-raja.jpg',
+    image: '/images/elephants/archive/heiyantuduwa-raja.jpg',
     imageCaption: 'Heiyantuduwa Raja bearing the Sacred Casket during the annual Kandy Esala Perahera',
     imageCredit: 'National Museum of Colombo & Family of William Gunasekara',
     imageLicense: 'Educational Public Heritage'
@@ -87,7 +87,7 @@ export const CUSTODIAN_ELEPHANTS = [
     whyFamous: 'The chief ceremonial tusker of the Kelaniya Raja Maha Vihara for over three decades, bearing the sacred relics across the historic Duruthu Perahera along the banks of the Kelani River.',
     physicalTraits: 'Long downward-tapering tusks, tranquil temper, stately stride during night pageants',
     habitat: 'Kelaniya Raja Maha Vihara sacred grounds',
-    image: '/images/elephants/kelani-raja.jpg',
+    image: '/images/elephants/archive/kelani-raja.jpg',
     imageCaption: 'Kelani Raja standing peacefully beside the sacred stupa at Kelaniya Raja Maha Vihara',
     imageCredit: 'Wanali Cultural Heritage Documentation',
     imageLicense: 'Creative Commons CC-BY 4.0'
@@ -105,7 +105,7 @@ export const CUSTODIAN_ELEPHANTS = [
     whyFamous: 'Gifted by the Royal Family of Thailand to the Government of Sri Lanka in 2001. After decades of service at Kande Vihara, a public advocacy campaign regarding his health led to his historic repatriation to Thailand in July 2023 for intensive medical rehabilitation.',
     physicalTraits: 'Long sweeping symmetrical ivory tusks, distinct Thai elephant conformation, gentle temperament',
     habitat: 'Kande Vihara sacred estate and Thai Elephant Conservation Center',
-    image: '/images/elephants/muthu-raja.jpg',
+    image: '/images/elephants/archive/muthu-raja.jpg',
     imageCaption: 'Muthu Raja peacefully resting and recuperating under medical care',
     imageCredit: 'Wikimedia Commons / CC-BY-SA 2.0 (Photo: McKay Savage)',
     imageLicense: 'Creative Commons CC-BY-SA 2.0'
@@ -123,7 +123,7 @@ export const CUSTODIAN_ELEPHANTS = [
     whyFamous: 'The most famous war elephant in ancient Sri Lankan history, documented extensively in the Mahavamsa. Served as the loyal mount of King Dutugemunu, battering through the fortified iron gates of Vijithapura fortress.',
     physicalTraits: 'Peerless battle intelligence, immense physical strength, honored with royal ornaments and golden tusk sheaths',
     habitat: 'Ancient Rajarata and Ruhuna royal stables',
-    image: '/images/elephants/kandula-legend.jpg',
+    image: '/images/elephants/archive/kandula-legend.jpg',
     imageCaption: 'Kandula depicted with traditional antique royal brass armor beside ancient fortress ramparts',
     imageCredit: 'Wanali Historical Reconstruction Project',
     imageLicense: 'Creative Commons CC-BY 4.0'
@@ -141,7 +141,7 @@ export const CUSTODIAN_ELEPHANTS = [
     whyFamous: 'The premier ceremonial tusker of the Ruhunu Maha Kataragama Devalaya, carrying the sacred casket of God Skanda through the historic sacred grounds for decades.',
     physicalTraits: 'Graceful outward-turning tusks, regal demeanor during night torch-lit processions along the Menik Ganga',
     habitat: 'Kataragama sacred precinct and Yala buffer forests',
-    image: '/images/elephants/kataragama-wasana.jpg',
+    image: '/images/elephants/archive/kataragama-wasana.jpg',
     imageCaption: 'Kataragama Wasana in ceremonial pageant regalia along the Menik Ganga river at dusk',
     imageCredit: 'Wanali Cultural Heritage Documentation',
     imageLicense: 'Creative Commons CC-BY 4.0'
@@ -159,7 +159,7 @@ export const CUSTODIAN_ELEPHANTS = [
     whyFamous: 'Gifted in 1987 to the Sri Dalada Maligawa by former Indian Prime Minister Rajiv Gandhi. Indiraja is one of the senior ceremonial tuskers trusted to carry the Sacred Relic Casket at the annual Kandy Esala Perahera.',
     physicalTraits: 'Tall stature, elegant symmetric tusks, high crown, steady and composed walking gait',
     habitat: 'Sri Dalada Maligawa elephant stables, Kandy',
-    image: '/images/elephants/maligawa-indiraja.jpg',
+    image: '/images/elephants/archive/maligawa-indiraja.jpg',
     imageCaption: 'Indiraja in full ceremonial decorative regalia at the Kandy Esala Perahera',
     imageCredit: 'Wikimedia Commons / CC-BY-SA 3.0 (Photo: Rehman)',
     imageLicense: 'Creative Commons CC-BY-SA 3.0'

@@ -1,23 +1,24 @@
 /**
  * Elephant Card Component
- * Renders individual tusker cards for catalog and featured grids
+ * Renders streamlined tusker cards with uniform heights and truncated descriptions
  */
 
 export function renderElephantCard(elephant) {
   const statusClass = elephant.status === 'Alive' ? 'badge-alive' :
     (elephant.status === 'Deceased' ? 'badge-deceased' : 'badge-historical');
 
-  const causeOfDeathHtml = elephant.causeOfDeath && elephant.causeOfDeath !== 'None' ? `
-    <div class="dossier-fate">
-      <strong>Fate / Cause:</strong> ${elephant.causeOfDeath}
-    </div>
-  ` : '';
+  const slug = elephant.id || (elephant.image ? elephant.image.split('/').pop().replace(/\.jpg$/, '') : '');
+  const dossierUrl = `/elephants/${elephant.id}.html`;
 
   const imageHtml = elephant.image ? `
-    <div class="card-image-wrap">
-      <img src="${elephant.image}" alt="${elephant.name}" class="card-image" loading="lazy">
+    <a href="${dossierUrl}" class="card-image-wrap" aria-label="View dossier for ${elephant.name}">
+      <picture>
+        <source srcset="/images/elephants/480p/${slug}.avif" type="image/avif">
+        <source srcset="/images/elephants/480p/${slug}.webp" type="image/webp">
+        <img src="${elephant.image}" alt="${elephant.name}" class="card-image" loading="lazy" width="480" height="270">
+      </picture>
       <span class="card-image-credit">${elephant.imageCredit}</span>
-    </div>
+    </a>
   ` : '';
 
   return `
@@ -27,7 +28,9 @@ export function renderElephantCard(elephant) {
         <span class="badge ${statusClass}">${elephant.status}</span>
         <span class="badge badge-category">${elephant.category}</span>
       </div>
-      <h3 class="tusker-name">${elephant.name}</h3>
+      <h3 class="tusker-name">
+        <a href="${dossierUrl}" class="tusker-name-link">${elephant.name}</a>
+      </h3>
       <div class="tusker-sinhala">${elephant.sinhalaName}</div>
       <div class="dossier-grid">
         <div class="dossier-field">
@@ -38,18 +41,17 @@ export function renderElephantCard(elephant) {
           <span class="dossier-label">Location</span>
           <span class="dossier-value">${elephant.locationName}</span>
         </div>
-        <div class="dossier-field" style="grid-column: 1 / -1;">
-          <span class="dossier-label">Tusks &amp; Physical Traits</span>
-          <span class="dossier-value">${elephant.physicalTraits}</span>
-        </div>
-        ${causeOfDeathHtml}
       </div>
       <p class="tusker-narrative">
         ${elephant.whyFamous}
       </p>
       <div class="card-footer">
-        <a href="/elephants/${elephant.id}.html" class="card-action">
-          View Archival Dossier
+        <a href="${dossierUrl}" class="card-action">
+          <span>View Dossier</span>
+          <svg class="action-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
         </a>
       </div>
     </article>

@@ -15,7 +15,7 @@ export const WILD_ELEPHANTS = [
     whyFamous: 'Standing nearly 11 feet tall, Kawanthissa was one of the largest and most beloved wild tuskers in modern Sri Lankan history. Known for his astonishingly peaceful demeanor around farming villages in Galgamuwa and Maho, his tragic demise in October 2026 united the nation in grief and ignited the movement to catalog and defend every surviving tusker.',
     physicalTraits: 'Towering 11 ft shoulder height, thick majestic symmetrical ivory tusks, calm and dignified wild temperament',
     habitat: 'Usgala Siyambalangamuwa tank catchment, Galgamuwa and Maho forests',
-    image: '/images/elephants/kawanthissa-tusker.jpg',
+    image: '/images/elephants/archive/kawanthissa-tusker.jpg',
     imageCaption: 'Kawanthissa standing in the quiet scrublands of Usgala Siyambalangamuwa at dusk',
     imageCredit: 'Wanali Archival Wildlife Reconstruction Studio',
     imageLicense: 'Creative Commons CC-BY 4.0'
@@ -33,7 +33,7 @@ export const WILD_ELEPHANTS = [
     whyFamous: 'Sri Lanka most recognizable wild tusker with unique crossed tusks forming an X shape. Despite suffering from blindness in one eye due to past trap gun injuries, he roamed the Galgamuwa dry zone peacefully for decades.',
     physicalTraits: 'Distinctive criss-crossed tusks, imposing stature, known for peaceful coexistence with rural farmers',
     habitat: 'Galgamuwa, Reswehera, and Siyambalangamuwa forests',
-    image: '/images/elephants/dala-poottuwa.jpg',
+    image: '/images/elephants/archive/dala-poottuwa.jpg',
     imageCaption: 'The iconic Galgamuwa Dala Poottuwa displaying his distinctive crossed ivory tusks',
     imageCredit: 'Wanali Archival Wildlife Reconstruction Studio',
     imageLicense: 'Creative Commons CC-BY 4.0'
@@ -51,7 +51,7 @@ export const WILD_ELEPHANTS = [
     whyFamous: 'Named after ancient monarch King Walagamba, renowned as one of the largest dominant alpha tuskers recorded in the North Central tank basins. His commanding presence and calm intelligence around Kala Wewa influenced tusker genetics across the region.',
     physicalTraits: 'Massive broad skull, thick symmetrical down-pointing tusks, deep ear pigmentation',
     habitat: 'Kala Wewa basin and Kahalla-Pallekele sanctuary',
-    image: '/images/elephants/walagamba-tusker.jpg',
+    image: '/images/elephants/archive/walagamba-tusker.jpg',
     imageCaption: 'Walagamba the dominant alpha tusker of Kala Wewa surveying the basin',
     imageCredit: 'Wanali Wildlife Field Documentation',
     imageLicense: 'Creative Commons CC-BY 4.0'
@@ -69,7 +69,7 @@ export const WILD_ELEPHANTS = [
     whyFamous: 'The immortal symbol of freedom in Sri Lankan folklore. His heroic stand to protect his herd and refusal to yield to chains forced parliament to outlaw the elephant kraal capture system forever.',
     physicalTraits: 'Fierce herd protector, defiant wild bull immortalized in traditional folk songs and popular culture',
     habitat: 'Panamure virgin forests, Sabaragamuwa',
-    image: '/images/elephants/panamure-hasthiraja.jpg',
+    image: '/images/elephants/archive/panamure-hasthiraja.jpg',
     imageCaption: 'Panamure Hasthi Rajaya standing proud in the virgin rainforest of Sabaragamuwa',
     imageCredit: 'Wanali Historic Wildlife Archive',
     imageLicense: 'Public Heritage / CC-BY 4.0'
@@ -87,7 +87,7 @@ export const WILD_ELEPHANTS = [
     whyFamous: 'Beloved icon of the Rajarata wilderness. Survived debilitating trap gun and rifle wounds to his front leg thanks to an unprecedented multi-month medical mobilization by wildlife veterinarians and loving villagers.',
     physicalTraits: 'Long curving ivory tusks, resilient spirit, recognized by wildlife trackers across Anuradhapura tanks',
     habitat: 'Thirappane and Maradankadawala forest corridors',
-    image: '/images/elephants/thirappane-agbo.jpg',
+    image: '/images/elephants/archive/thirappane-agbo.jpg',
     imageCaption: 'Thirappane Agbo grazing peacefully along the lotus-filled reservoir shores of Anuradhapura',
     imageCredit: 'Wanali Conservation Field Documentation',
     imageLicense: 'Creative Commons CC-BY 4.0'
@@ -105,7 +105,7 @@ export const WILD_ELEPHANTS = [
     whyFamous: 'The beloved gentle giant of the Kala Wewa tank ecosystem. Thousands of nature photographers and local families visited Kala Wewa each dry season specifically to view Revatha feeding peacefully among lotus beds.',
     physicalTraits: 'Dark black pigmentation, thick downward-sloping symmetrical tusks, uniquely calm disposition around humans',
     habitat: 'Kala Wewa National Park and Balalu Wewa wetland reserve',
-    image: '/images/elephants/kala-wewa-revatha.jpg',
+    image: '/images/elephants/archive/kala-wewa-revatha.jpg',
     imageCaption: 'Kala Wewa Revatha feeding in the aquatic shallows of the historic reservoir',
     imageCredit: 'Wanali Archival Wildlife Reconstruction Studio',
     imageLicense: 'Creative Commons CC-BY 4.0'
@@ -123,7 +123,7 @@ export const WILD_ELEPHANTS = [
     whyFamous: 'A dominant wild patriarch tusker of the Kala Wewa basin. Renowned among rangers and wildlife enthusiasts for his bold presence and companionship with tusker Revatha.',
     physicalTraits: 'Heavy thickset tusks, prominent shoulder crest, ruler of the tank shores during dry season gatherings',
     habitat: 'Kala Wewa wetlands and Kahalla-Pallekele sanctuary',
-    image: '/images/elephants/kala-wewa-barana.jpg',
+    image: '/images/elephants/archive/kala-wewa-barana.jpg',
     imageCaption: 'The formidable wild patriarch Barana emerging from marsh grasses at sunset',
     imageCredit: 'Wanali Archival Wildlife Reconstruction Studio',
     imageLicense: 'Creative Commons CC-BY 4.0'
@@ -141,7 +141,7 @@ export const WILD_ELEPHANTS = [
     whyFamous: 'Carries the rare crossed-tusk genetics of the fallen legend Galgamuwa Dala Poottuwa. Symbolizes hope and natural renewal for wild tuskers in the northwestern dry zone.',
     physicalTraits: 'Young emergent crossed tusks, alert wild temperament, protected by local community guardians',
     habitat: 'Reswehera and Galgamuwa wild reserve',
-    image: '/images/elephants/podi-dala-poottuwa.jpg',
+    image: '/images/elephants/archive/podi-dala-poottuwa.jpg',
     imageCaption: 'Young Podi Dala Poottuwa showing his emergent crossed tusks in Reswehera',
     imageCredit: 'Wanali Conservation Field Documentation',
     imageLicense: 'Creative Commons CC-BY 4.0'
