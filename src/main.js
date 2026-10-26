@@ -1,8 +1,21 @@
 import { themeManager } from './core/theme-manager.js';
-import { ELEPHANTS } from './data/elephants.js';
+import { ELEPHANTS, getStats } from './data/elephants.js';
 import { renderElephantCard } from './modules/elephant-card.js';
 import { initCatalogFilter } from './modules/catalog-filter.js';
 import { initTuskerMap } from './modules/map-controller.js';
+
+function hydrateLedgerStats() {
+  const totalEl = document.getElementById('stat-total');
+  if (!totalEl) return;
+  const stats = getStats();
+  totalEl.textContent = String(stats.total);
+  const aliveEl = document.getElementById('stat-alive');
+  if (aliveEl) aliveEl.textContent = String(stats.alive);
+  const deceasedEl = document.getElementById('stat-deceased');
+  if (deceasedEl) deceasedEl.textContent = String(stats.deceased);
+  const histEl = document.getElementById('stat-historical');
+  if (histEl) histEl.textContent = String(stats.historical);
+}
 
 function initMobileMenu() {
   const menuBtn = document.getElementById('mobile-menu-btn');
@@ -28,6 +41,7 @@ function initMobileMenu() {
 document.addEventListener('DOMContentLoaded', () => {
   themeManager.init();
   initMobileMenu();
+  hydrateLedgerStats();
 
   // Initialize Map if canvas is present
   const mapCanvas = document.getElementById('tusker-map-canvas');
