@@ -4,11 +4,15 @@
  */
 
 import { WILD_ELEPHANTS } from './wild-elephants.js';
+import { PROTECTED_TUSKERS } from './protected-tuskers-1.js';
+import { PROTECTED_TUSKERS_2 } from './protected-tuskers-2.js';
 import { PARK_ELEPHANTS } from './park-elephants.js';
 import { CUSTODIAN_ELEPHANTS } from './custodian-elephants.js';
 
 export const ELEPHANTS = [
   ...WILD_ELEPHANTS,
+  ...PROTECTED_TUSKERS,
+  ...PROTECTED_TUSKERS_2,
   ...PARK_ELEPHANTS,
   ...CUSTODIAN_ELEPHANTS
 ];
